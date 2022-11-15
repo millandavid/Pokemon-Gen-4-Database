@@ -1,6 +1,7 @@
 <template>
   <v-app id="app">
       <v-bottom-navigation
+      color="#ff6b6b"
       v-model="value"
       grow
       mandatory
@@ -18,8 +19,8 @@
         <span class="text-h5 text-left">ER Diagram</span>
       </v-btn>
 
-      <v-btn to="/Interact" >
-        <span class="text-h5 text-left">Interact</span>
+      <v-btn to="/Database" >
+        <span class="text-h5 text-left">Database</span>
       </v-btn>
 
       </v-bottom-navigation>

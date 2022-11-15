@@ -1,70 +1,27 @@
 <template>
-  <div class="HOMEhome">
+  <div class="Home-Page">
 
-      <!-- maybe replace with plaintext?? -->
-      <p></p>
-      <div class=headerImage></div>
-
-      <p> </p> <!-- spacer -->
-
-      <v-card
-        elevation="2"
-        shaped
-        class = "card"
-      >
-        <div class="cardInner">
-          <h1>Group 69:</h1>
-          <h3 class="text-h5 text-left">Millan David   -- davidm2@myumanitoba.ca</h3>
-          <h3 class="text-h5 text-left">Paul Gameiro   -- gameirop@myumanitoba.ca</h3>
-        </div>
-      </v-card>
-
-      <v-card
-        elevation="2"
-        shaped
-        class = "card"
-      >
-        <div class="cardInner">
-          <h2>Github Repo</h2>
-          <h4>Link to GitHub Repository <a target="_blank" href = "https://github.com/millandavid/Pokemon-Gen-4-Database"> HERE</a></h4>
-        </div>
-      </v-card>
-
-       <v-card
-        elevation="2"
-        shaped
-        class = "card"
-      >
-        <div class="cardInner">
-          <h2>Navigation</h2>
-          <h4>Use the top menu to:</h4>
-          <li>Read our project write-up</li>
-          <li>View the ER Diagram & assumptions</li>
-          <li>Interact with the database!</li>
-          <ul class="tabcontent">
-            <li><h4>Use the filter checkboxes to narrow down your focus if desired</h4></li>
-            <li>Click the dropdown stating "What do you want to know?"</li>
-            <li>Start typing or scroll through the list of queries</li>
-            <li>New dropdown menus may appear after selecting the query</li>
-            <li>Once all dropdowns are filled, click "QUERY!" to run the search</li>
-            <li>To save the results of the query to CSV, click "DOWNLOAD"</li>
-            <li>To run a new query, click "NEW QUERY"</li>
-          </ul>
-        </div>
-      </v-card>
-
-        <!-- dumb & lazy footer spacer -->
-         <v-card
-        elevation="2"
-        shaped
-        class = "invisibleCard"
-      >
-        <div class="cardInner">
-        </div>
-      </v-card>
-
+    <div class="wrapper">
+      <div class="box a">
+        <h1>Group 69</h1>
+        <h3 >Millan David </h3>
+        <h3 >Paul Gameiro</h3>
+      </div>
+      <div class="box b">
+        <h1>Github Repo</h1>
+        <h4 class="text-h6 text-left">Link to GitHub Repository <a target="_blank" href = "https://github.com/millandavid/Pokemon-Gen-4-Database"> HERE</a></h4>
+      </div>
+      <div class="box c">
+        <h1>Instructions</h1>
+        <p>loremloremlorem</p>
+      </div>
+    </div>
   </div>
 </template>
+
+<script>
+export default {};
+</script>
 
 <style lang="scss" scoped>
 
@@ -72,43 +29,43 @@
     padding-left:50px;
   }
 
-  .HOMEhome{
-    background-image: url("../assets/bkg.png");
+  .Home-Page{
+    background-image: url("../assets/sinnoh.jpg");
     height: 100%;
     width: 100%;
     overflow: hidden;
     background-size: cover;
     background-position: center;
-    }
-
-  .headerImage{
-    background-image: url("../assets/PokeDB.jpg");
-    width: 100%;
-    height: 12vh;
-    background-size: cover;
-    //overflow: hidden;
-    background-position: center;
-    border-bottom: solid, black, 2px;
-    margin-bottom:20px;
   }
 
-  .h1 {
-    color: grey;
-  }
-  .pre{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-
-  .card{
-    margin: 20px;
-  }
-
-  .cardInner{
-    padding: 15px;
+  // css for info
+  .wrapper {
+    margin-top: 3%;
+    margin-left: 5vw;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    background-color: #444;
+    border-radius: 25px;
   }
 
-  .invisibleCard{
-    opacity: 0;
+  .box {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+  }
+
+  .a {
+    grid-column: 1 / 2;
+    grid-row: 1;
+  }
+  .b {
+    grid-column: 2 / 3;
+    grid-row: 1;
+  }
+  .c {
+    grid-column: 1 / 3;
+    grid-row: 2 ;
   }
 
 </style>
