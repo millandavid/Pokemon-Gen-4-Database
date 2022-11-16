@@ -2,12 +2,13 @@
 --
 
 --changed baseStats to HP, DEF....
---should we have description?
 --clean up relations first then entities
---should height and weight be random (maybe range)
---what is eggSteps
 --should change effortValues to individual ones like baseStats?
 --check superContest
+--ON DELETE CASCADES
+--add not nulls?
+--remove PokemonType from ER? (since we have pokemonHasType table/relation)
+--trainer time change to date instead of int?
 
 use cs3380;
 
@@ -51,7 +52,7 @@ create table type (
 create table move (
     moveName text primary key,
     basePower integer,
-    accuracy integer, --maybe real?
+    accuracy integer,
     effect text,
     battleType text,
     category text,
@@ -66,6 +67,17 @@ create table location (
     locationName text primary key
 );
 
+create table trainer (
+    trainerID integer primary key,
+    secretID integer,
+    trainerName text,
+    money integer not null,
+    score integer not null,
+    pokedexCount integer not null,
+    time integer not null, --DATE?
+    startTime integer not null --DATE?
+);
+
 create table pokemonEggGroups (
     dexNum integer references pokemon(dexNum),
     eggGroup text not null,
@@ -78,12 +90,44 @@ create table pokemonAbilities (
     primary key (dexNum, ability)
 );
 
+create table pokemonHasTypes ( --same as hasType relation
+    dexNum integer references pokemon(dexNum),
+    pokeType text references type(typeName),
+    primary key (dexNum, pokeType)
+);
 
+create table pokemonLearnsMoveBy (
+    dexNum integer references pokemon(dexNum),
+    moveName text references move(moveName),
+    learnsBy text,
+    primary key (dexNum, moveName, learnsBy)
+);
 
+--relatations
 
+create table moveHasType( --isType relation
+    moveName text references move(moveName),
+    typeName text references type(typeName),
+    primary key (moveName, typeName)
+);
 
+create table effectiveness(
+    atkTypeName text references type(typeName), --attacking type
+    defTypeName text references type(typeName), --defending type
+    primary key (atkTypeName, defTypeName)
+);
 
+create table locatedAt(
+    dexNum integer references pokemon(dexNum),
+    locationName text references location(locationName),
+    primary key (dexNum, locationName)
+);
 
+create table trainerOwns(
+    dexNum integer references pokemon(dexNum),
+    trainerID integer references trainer(trainerID),
+    primary key (dexNum, trainerID)
+);
 
 
 
