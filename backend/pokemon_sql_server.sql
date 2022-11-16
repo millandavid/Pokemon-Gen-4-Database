@@ -9,6 +9,7 @@
 --add not nulls?
 --remove PokemonType from ER? (since we have pokemonHasType table/relation)
 --trainer time change to date instead of int?
+--DO CLEANUP
 
 use cs3380;
 
