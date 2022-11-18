@@ -10,7 +10,7 @@
 
       <v-row align="center">
        <v-col cols="auto">
-         <h3>Select which info you're looking for in the drop-down below</h3>
+         <h3>Select a query to display:</h3>
        </v-col>
       </v-row>
 
@@ -28,7 +28,9 @@
             solo
           ></v-autocomplete>
         </v-col>
+        <v-col class = "btn-container">
           <v-btn text color="primary" @click="submit">Submit</v-btn>
+        </v-col>
        </v-row>
     </v-container>
   </div>
@@ -93,5 +95,14 @@ export default {
 
   .filterClear{
     margin-left:10px;
+  }
+
+  .v-text-field.v-text-field--solo .v-input__control input,.v-list-item .v-list-item__title{
+    caret-color: auto;
+    text-align: center;
+  }
+
+  .btn-container{
+    margin-bottom: 5vh;
   }
 </style>
