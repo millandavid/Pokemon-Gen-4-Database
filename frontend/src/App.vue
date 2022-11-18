@@ -2,7 +2,6 @@
   <v-app id="app">
       <v-bottom-navigation
       color="#ff6b6b"
-      v-model="value"
       grow
       mandatory
       >
