@@ -19,7 +19,6 @@ use cs3380;
 
 -- clean up
 drop table if exists pokemonEggGroups;
-drop table if exists pokemonLearnsMoveBy;
 drop table if exists pokemonLearnsMoves;
 drop table if exists pokemonAbilities;
 drop table if exists trainerOwns;
@@ -51,7 +50,6 @@ create table pokemon ( --done
     baseHappiness integer not null,
     colour text not null,
     eggSteps integer
-    --evolveMethod text
 );
 
 create table type ( --done
@@ -64,11 +62,9 @@ create table move ( --done
     accuracy integer,
 	description text,
     effect text,
-    --battleType text,
     category text,
     powerPoints integer,
     speedPrio integer
-    --moveLevel integer
 );
 
 create table location ( --done
@@ -97,13 +93,6 @@ create table pokemonAbilities ( --done
     ability varchar(100) not null,
     primary key (dexNum, ability)
 );
-
---create table pokemonLearnsMoveBy ( --MIGHT DELETE
-    --dexNum integer references pokemon(dexNum),
-    --moveName varchar(100) references move(moveName),
-    --learnsBy varchar(100),
-    --primary key (dexNum, moveName, learnsBy)
---);
 
 --relatations
 
