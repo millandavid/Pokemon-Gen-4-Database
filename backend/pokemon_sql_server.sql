@@ -1222,1776 +1222,1776 @@ INSERT INTO location (locationName) VALUES('Wayward Cave');
 
 INSERT INTO trainer (trainerID, secretID, trainerName, money, score, pokedexCount, time, startTime) VALUES(43554, 10005, 'Jerry', 955302, 4987, 477, '50:51', 'Dec. 15, 2008');
 
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (001,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (001,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (002,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (002,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (003,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (003,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (004,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (004,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (005,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (005,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (006,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (006,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (007,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (007,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (008,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (008,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (009,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (009,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (010,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (011,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (012,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (013,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (014,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (015,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (016,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (017,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (018,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (019,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (020,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (021,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (022,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (023,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (023,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (024,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (024,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (025,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (025,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (026,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (026,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (027,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (028,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (029,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (029,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (032,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (032,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (033,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (033,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (034,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (034,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (035,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (036,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (037,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (038,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (039,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (040,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (041,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (042,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (043,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (044,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (045,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (046,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (046,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (047,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (047,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (048,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (049,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (050,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (051,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (052,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (053,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (054,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (054,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (055,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (055,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (056,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (057,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (058,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (059,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (060,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (061,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (062,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (063,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (064,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (065,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (066,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (067,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (068,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (069,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (070,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (071,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (072,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (073,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (074,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (075,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (076,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (077,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (078,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (079,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (079,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (080,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (080,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (081,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (082,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (083,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (083,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (084,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (085,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (086,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (086,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (087,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (087,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (088,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (089,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (090,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (091,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (092,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (093,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (094,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (095,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (096,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (097,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (098,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (099,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (100,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (101,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (102,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (103,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (104,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (105,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (106,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (107,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (108,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (109,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (110,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (111,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (111,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (112,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (112,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (113,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (114,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (115,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (116,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (116,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (117,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (117,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (118,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (119,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (120,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (121,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (122,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (123,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (124,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (125,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (126,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (127,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (128,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (129,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (129,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (130,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (130,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (131,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (131,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (132,'Ditto')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (133,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (134,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (135,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (136,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (137,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (138,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (138,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (139,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (139,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (140,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (140,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (141,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (141,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (142,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (143,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (147,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (147,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (148,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (148,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (149,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (149,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (152,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (152,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (153,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (153,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (154,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (154,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (155,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (156,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (157,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (158,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (158,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (159,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (159,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (160,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (160,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (161,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (162,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (163,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (164,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (165,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (166,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (167,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (168,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (169,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (170,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (171,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (176,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (176,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (177,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (178,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (179,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (179,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (180,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (180,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (181,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (181,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (182,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (183,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (183,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (184,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (184,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (185,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (186,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (187,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (187,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (188,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (188,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (189,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (189,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (190,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (191,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (192,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (193,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (194,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (194,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (195,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (195,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (196,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (197,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (198,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (199,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (199,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (200,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (202,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (203,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (204,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (205,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (206,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (207,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (208,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (209,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (209,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (210,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (210,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (211,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (212,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (213,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (214,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (215,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (216,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (217,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (218,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (219,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (220,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (221,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (222,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (222,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (223,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (223,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (224,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (224,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (225,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (225,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (226,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (227,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (228,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (229,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (230,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (230,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (231,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (232,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (233,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (234,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (235,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (237,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (241,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (242,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (246,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (247,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (248,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (252,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (252,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (253,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (253,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (254,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (254,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (255,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (256,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (257,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (258,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (258,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (259,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (259,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (260,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (260,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (261,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (262,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (263,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (264,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (265,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (266,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (267,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (268,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (269,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (270,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (270,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (271,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (271,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (272,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (272,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (273,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (273,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (274,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (274,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (275,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (275,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (276,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (277,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (278,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (278,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (279,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (279,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (280,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (281,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (282,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (283,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (283,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (284,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (284,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (285,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (285,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (286,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (286,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (287,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (288,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (289,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (290,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (291,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (292,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (293,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (293,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (294,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (294,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (295,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (295,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (296,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (297,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (299,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (300,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (300,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (301,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (301,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (302,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (303,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (303,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (304,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (305,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (306,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (307,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (308,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (309,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (310,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (311,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (312,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (313,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (313,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (314,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (314,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (315,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (315,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (316,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (317,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (318,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (319,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (320,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (320,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (321,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (321,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (322,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (323,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (324,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (325,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (326,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (327,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (327,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (328,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (329,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (330,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (331,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (331,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (332,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (332,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (333,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (333,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (334,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (334,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (335,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (336,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (336,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (337,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (338,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (339,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (340,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (341,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (341,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (342,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (342,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (343,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (344,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (345,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (346,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (347,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (348,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (349,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (349,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (350,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (350,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (351,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (351,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (352,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (353,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (354,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (355,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (356,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (357,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (357,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (358,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (359,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (361,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (361,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (362,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (362,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (363,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (363,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (364,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (364,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (365,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (365,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (366,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (367,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (368,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (369,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (369,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (370,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (371,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (372,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (373,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (374,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (375,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (376,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (387,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (387,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (388,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (388,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (389,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (389,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (390,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (390,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (391,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (391,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (392,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (392,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (393,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (393,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (394,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (394,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (395,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (395,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (396,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (397,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (398,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (399,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (399,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (400,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (400,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (401,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (402,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (403,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (404,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (405,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (407,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (407,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (408,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (409,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (410,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (411,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (412,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (413,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (414,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (415,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (416,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (417,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (417,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (418,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (418,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (419,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (419,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (420,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (420,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (421,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (421,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (422,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (422,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (423,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (423,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (424,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (425,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (426,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (427,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (427,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (428,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (428,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (429,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (430,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (431,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (432,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (434,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (435,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (436,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (437,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (441,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (442,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (443,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (443,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (444,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (444,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (445,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (445,'Dragon')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (448,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (448,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (449,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (450,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (451,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (451,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (452,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (452,'Water3')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (453,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (454,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (455,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (456,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (457,'Water2')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (459,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (459,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (460,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (460,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (461,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (462,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (463,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (464,'Monster')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (464,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (465,'Plant')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (466,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (467,'Humanshape')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (468,'Flying')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (468,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (469,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (470,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (471,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (472,'Bug')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (473,'Ground')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (474,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (475,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (476,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (477,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (478,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (478,'Mineral')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (479,'Indeterminate')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (489,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (489,'Fairy')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (490,'Water1')
-INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (490,'Fairy')
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (001,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (001,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (002,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (002,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (003,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (003,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (004,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (004,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (005,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (005,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (006,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (006,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (007,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (007,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (008,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (008,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (009,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (009,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (010,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (011,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (012,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (013,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (014,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (015,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (016,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (017,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (018,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (019,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (020,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (021,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (022,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (023,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (023,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (024,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (024,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (025,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (025,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (026,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (026,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (027,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (028,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (029,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (029,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (032,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (032,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (033,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (033,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (034,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (034,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (035,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (036,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (037,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (038,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (039,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (040,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (041,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (042,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (043,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (044,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (045,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (046,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (046,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (047,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (047,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (048,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (049,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (050,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (051,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (052,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (053,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (054,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (054,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (055,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (055,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (056,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (057,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (058,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (059,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (060,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (061,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (062,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (063,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (064,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (065,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (066,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (067,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (068,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (069,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (070,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (071,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (072,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (073,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (074,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (075,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (076,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (077,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (078,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (079,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (079,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (080,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (080,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (081,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (082,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (083,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (083,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (084,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (085,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (086,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (086,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (087,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (087,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (088,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (089,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (090,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (091,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (092,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (093,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (094,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (095,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (096,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (097,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (098,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (099,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (100,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (101,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (102,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (103,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (104,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (105,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (106,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (107,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (108,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (109,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (110,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (111,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (111,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (112,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (112,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (113,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (114,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (115,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (116,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (116,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (117,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (117,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (118,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (119,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (120,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (121,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (122,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (123,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (124,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (125,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (126,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (127,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (128,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (129,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (129,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (130,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (130,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (131,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (131,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (132,'Ditto');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (133,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (134,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (135,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (136,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (137,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (138,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (138,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (139,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (139,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (140,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (140,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (141,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (141,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (142,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (143,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (147,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (147,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (148,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (148,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (149,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (149,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (152,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (152,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (153,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (153,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (154,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (154,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (155,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (156,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (157,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (158,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (158,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (159,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (159,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (160,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (160,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (161,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (162,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (163,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (164,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (165,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (166,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (167,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (168,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (169,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (170,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (171,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (176,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (176,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (177,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (178,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (179,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (179,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (180,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (180,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (181,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (181,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (182,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (183,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (183,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (184,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (184,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (185,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (186,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (187,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (187,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (188,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (188,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (189,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (189,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (190,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (191,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (192,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (193,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (194,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (194,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (195,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (195,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (196,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (197,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (198,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (199,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (199,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (200,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (202,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (203,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (204,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (205,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (206,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (207,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (208,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (209,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (209,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (210,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (210,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (211,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (212,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (213,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (214,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (215,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (216,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (217,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (218,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (219,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (220,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (221,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (222,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (222,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (223,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (223,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (224,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (224,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (225,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (225,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (226,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (227,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (228,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (229,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (230,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (230,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (231,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (232,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (233,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (234,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (235,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (237,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (241,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (242,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (246,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (247,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (248,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (252,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (252,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (253,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (253,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (254,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (254,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (255,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (256,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (257,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (258,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (258,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (259,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (259,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (260,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (260,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (261,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (262,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (263,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (264,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (265,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (266,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (267,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (268,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (269,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (270,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (270,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (271,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (271,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (272,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (272,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (273,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (273,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (274,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (274,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (275,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (275,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (276,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (277,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (278,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (278,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (279,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (279,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (280,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (281,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (282,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (283,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (283,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (284,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (284,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (285,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (285,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (286,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (286,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (287,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (288,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (289,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (290,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (291,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (292,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (293,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (293,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (294,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (294,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (295,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (295,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (296,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (297,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (299,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (300,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (300,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (301,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (301,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (302,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (303,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (303,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (304,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (305,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (306,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (307,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (308,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (309,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (310,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (311,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (312,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (313,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (313,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (314,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (314,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (315,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (315,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (316,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (317,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (318,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (319,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (320,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (320,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (321,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (321,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (322,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (323,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (324,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (325,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (326,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (327,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (327,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (328,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (329,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (330,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (331,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (331,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (332,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (332,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (333,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (333,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (334,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (334,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (335,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (336,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (336,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (337,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (338,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (339,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (340,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (341,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (341,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (342,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (342,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (343,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (344,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (345,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (346,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (347,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (348,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (349,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (349,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (350,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (350,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (351,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (351,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (352,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (353,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (354,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (355,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (356,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (357,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (357,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (358,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (359,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (361,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (361,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (362,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (362,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (363,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (363,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (364,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (364,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (365,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (365,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (366,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (367,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (368,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (369,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (369,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (370,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (371,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (372,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (373,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (374,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (375,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (376,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (387,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (387,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (388,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (388,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (389,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (389,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (390,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (390,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (391,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (391,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (392,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (392,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (393,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (393,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (394,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (394,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (395,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (395,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (396,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (397,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (398,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (399,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (399,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (400,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (400,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (401,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (402,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (403,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (404,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (405,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (407,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (407,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (408,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (409,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (410,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (411,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (412,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (413,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (414,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (415,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (416,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (417,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (417,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (418,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (418,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (419,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (419,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (420,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (420,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (421,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (421,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (422,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (422,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (423,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (423,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (424,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (425,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (426,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (427,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (427,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (428,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (428,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (429,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (430,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (431,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (432,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (434,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (435,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (436,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (437,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (441,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (442,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (443,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (443,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (444,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (444,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (445,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (445,'Dragon');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (448,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (448,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (449,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (450,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (451,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (451,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (452,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (452,'Water3');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (453,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (454,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (455,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (456,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (457,'Water2');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (459,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (459,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (460,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (460,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (461,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (462,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (463,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (464,'Monster');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (464,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (465,'Plant');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (466,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (467,'Humanshape');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (468,'Flying');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (468,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (469,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (470,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (471,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (472,'Bug');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (473,'Ground');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (474,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (475,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (476,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (477,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (478,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (478,'Mineral');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (479,'Indeterminate');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (489,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (489,'Fairy');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (490,'Water1');
+INSERT INTO pokemonEggGroups (dexNum,eggGroup) VALUES (490,'Fairy');
 
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (001,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (001,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (002,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (002,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (003,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (003,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (004,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (005,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (006,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (006,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (007,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (008,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (009,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (010,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (011,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (012,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (012,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (013,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (013,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (014,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (014,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (015,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (015,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (016,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (016,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (017,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (017,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (018,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (018,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (019,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (020,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (021,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (021,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (022,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (022,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (023,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (024,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (025,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (026,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (027,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (028,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (029,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (030,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (031,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (031,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (032,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (033,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (034,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (034,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (035,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (036,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (037,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (038,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (039,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (040,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (041,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (041,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (042,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (042,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (043,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (043,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (044,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (044,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (045,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (045,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (046,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (046,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (047,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (047,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (048,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (048,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (049,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (049,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (050,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (051,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (052,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (053,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (054,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (055,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (056,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (057,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (058,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (059,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (060,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (061,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (062,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (062,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (063,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (064,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (065,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (066,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (067,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (068,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (069,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (069,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (070,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (070,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (071,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (071,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (072,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (072,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (073,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (073,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (074,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (074,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (075,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (075,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (076,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (076,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (077,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (078,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (079,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (079,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (080,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (080,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (081,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (081,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (082,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (082,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (083,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (083,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (084,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (084,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (085,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (085,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (086,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (087,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (087,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (088,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (089,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (090,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (091,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (091,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (092,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (092,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (093,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (093,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (094,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (094,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (095,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (095,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (096,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (097,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (098,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (099,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (100,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (101,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (102,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (102,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (103,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (103,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (104,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (105,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (106,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (107,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (108,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (109,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (110,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (111,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (111,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (112,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (112,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (113,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (114,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (115,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (116,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (117,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (118,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (119,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (120,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (121,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (121,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (122,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (123,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (123,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (124,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (124,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (125,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (126,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (127,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (128,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (129,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (130,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (130,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (131,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (131,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (132,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (133,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (134,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (135,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (136,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (137,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (138,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (138,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (139,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (139,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (140,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (140,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (141,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (141,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (142,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (142,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (143,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (144,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (144,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (145,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (145,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (146,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (146,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (147,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (148,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (149,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (149,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (150,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (151,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (152,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (153,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (154,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (155,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (156,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (157,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (158,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (159,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (160,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (161,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (162,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (163,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (163,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (164,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (164,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (165,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (165,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (166,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (166,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (167,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (167,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (168,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (168,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (169,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (169,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (170,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (170,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (171,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (171,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (172,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (173,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (174,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (175,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (176,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (176,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (177,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (177,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (178,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (178,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (179,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (180,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (181,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (182,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (183,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (184,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (185,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (186,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (187,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (187,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (188,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (188,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (189,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (189,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (190,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (191,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (192,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (193,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (193,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (194,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (194,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (195,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (195,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (196,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (197,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (198,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (198,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (199,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (199,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (200,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (201,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (202,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (203,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (203,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (204,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (205,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (205,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (206,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (207,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (207,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (208,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (208,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (209,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (210,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (211,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (211,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (212,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (212,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (213,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (213,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (214,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (214,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (215,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (215,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (216,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (217,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (218,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (219,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (219,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (220,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (220,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (221,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (221,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (222,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (222,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (223,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (224,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (225,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (225,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (226,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (226,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (227,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (227,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (228,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (228,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (229,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (229,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (230,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (230,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (231,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (232,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (233,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (234,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (235,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (236,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (237,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (238,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (238,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (239,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (240,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (241,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (242,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (243,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (244,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (245,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (246,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (246,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (247,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (247,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (248,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (248,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (249,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (249,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (250,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (250,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (251,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (251,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (252,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (253,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (254,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (255,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (256,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (256,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (257,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (257,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (258,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (259,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (259,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (260,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (260,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (261,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (262,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (263,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (264,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (265,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (266,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (267,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (267,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (268,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (269,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (269,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (270,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (270,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (271,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (271,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (272,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (272,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (273,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (274,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (274,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (275,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (275,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (276,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (276,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (277,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (277,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (278,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (278,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (279,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (279,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (280,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (281,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (282,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (283,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (283,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (284,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (284,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (285,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (286,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (286,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (287,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (288,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (289,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (290,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (290,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (291,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (291,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (292,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (292,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (293,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (294,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (295,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (296,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (297,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (298,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (299,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (300,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (301,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (302,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (302,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (303,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (304,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (304,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (305,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (305,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (306,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (306,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (307,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (307,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (308,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (308,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (309,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (310,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (311,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (312,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (313,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (314,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (315,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (315,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (316,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (317,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (318,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (318,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (319,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (319,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (320,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (321,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (322,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (322,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (323,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (323,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (324,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (325,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (326,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (327,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (328,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (329,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (329,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (330,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (330,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (331,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (332,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (332,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (333,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (333,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (334,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (334,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (335,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (336,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (337,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (337,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (338,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (338,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (339,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (339,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (340,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (340,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (341,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (342,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (342,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (343,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (343,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (344,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (344,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (345,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (345,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (346,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (346,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (347,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (347,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (348,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (348,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (349,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (350,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (351,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (352,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (353,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (354,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (355,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (356,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (357,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (357,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (358,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (359,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (360,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (361,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (362,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (363,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (363,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (364,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (364,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (365,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (365,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (366,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (367,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (368,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (369,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (369,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (370,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (371,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (372,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (373,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (373,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (374,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (374,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (375,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (375,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (376,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (376,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (377,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (378,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (379,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (380,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (380,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (381,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (381,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (382,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (383,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (384,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (384,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (385,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (385,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (386,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (387,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (388,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (389,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (389,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (390,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (391,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (391,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (392,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (392,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (393,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (394,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (395,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (395,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (396,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (396,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (397,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (397,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (398,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (398,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (399,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (400,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (400,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (401,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (402,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (403,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (404,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (405,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (406,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (406,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (407,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (407,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (408,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (409,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (410,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (410,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (411,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (411,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (412,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (413,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (413,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (414,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (414,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (415,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (415,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (416,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (416,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (417,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (418,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (419,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (420,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (421,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (422,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (423,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (423,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (424,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (425,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (425,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (426,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (426,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (427,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (428,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (429,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (430,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (430,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (431,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (432,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (433,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (434,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (434,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (435,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (435,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (436,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (436,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (437,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (437,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (438,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (439,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (440,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (441,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (441,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (442,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (442,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (443,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (443,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (444,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (444,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (445,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (445,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (446,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (447,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (448,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (448,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (449,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (450,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (451,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (451,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (452,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (452,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (453,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (453,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (454,'Poison')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (454,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (455,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (456,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (457,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (458,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (458,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (459,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (459,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (460,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (460,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (461,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (461,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (462,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (462,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (463,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (464,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (464,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (465,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (466,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (467,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (468,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (468,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (469,'Bug')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (469,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (470,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (471,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (472,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (472,'Flying')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (473,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (473,'Ground')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (474,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (475,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (475,'Fighting')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (476,'Rock')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (476,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (477,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (478,'Ice')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (478,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (479,'Electric')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (479,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (480,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (481,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (482,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (483,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (483,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (484,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (484,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (485,'Fire')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (485,'Steel')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (486,'Normal')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (487,'Ghost')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (487,'Dragon')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (488,'Psychic')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (489,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (490,'Water')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (491,'Dark')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (492,'Grass')
-INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (493,'Normal')
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (001,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (001,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (002,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (002,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (003,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (003,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (004,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (005,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (006,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (006,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (007,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (008,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (009,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (010,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (011,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (012,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (012,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (013,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (013,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (014,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (014,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (015,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (015,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (016,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (016,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (017,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (017,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (018,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (018,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (019,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (020,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (021,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (021,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (022,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (022,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (023,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (024,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (025,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (026,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (027,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (028,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (029,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (030,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (031,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (031,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (032,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (033,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (034,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (034,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (035,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (036,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (037,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (038,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (039,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (040,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (041,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (041,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (042,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (042,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (043,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (043,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (044,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (044,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (045,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (045,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (046,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (046,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (047,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (047,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (048,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (048,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (049,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (049,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (050,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (051,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (052,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (053,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (054,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (055,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (056,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (057,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (058,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (059,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (060,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (061,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (062,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (062,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (063,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (064,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (065,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (066,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (067,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (068,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (069,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (069,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (070,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (070,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (071,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (071,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (072,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (072,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (073,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (073,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (074,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (074,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (075,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (075,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (076,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (076,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (077,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (078,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (079,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (079,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (080,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (080,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (081,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (081,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (082,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (082,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (083,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (083,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (084,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (084,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (085,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (085,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (086,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (087,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (087,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (088,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (089,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (090,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (091,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (091,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (092,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (092,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (093,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (093,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (094,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (094,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (095,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (095,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (096,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (097,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (098,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (099,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (100,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (101,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (102,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (102,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (103,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (103,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (104,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (105,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (106,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (107,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (108,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (109,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (110,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (111,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (111,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (112,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (112,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (113,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (114,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (115,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (116,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (117,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (118,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (119,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (120,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (121,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (121,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (122,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (123,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (123,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (124,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (124,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (125,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (126,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (127,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (128,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (129,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (130,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (130,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (131,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (131,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (132,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (133,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (134,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (135,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (136,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (137,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (138,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (138,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (139,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (139,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (140,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (140,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (141,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (141,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (142,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (142,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (143,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (144,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (144,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (145,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (145,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (146,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (146,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (147,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (148,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (149,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (149,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (150,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (151,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (152,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (153,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (154,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (155,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (156,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (157,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (158,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (159,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (160,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (161,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (162,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (163,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (163,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (164,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (164,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (165,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (165,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (166,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (166,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (167,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (167,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (168,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (168,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (169,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (169,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (170,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (170,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (171,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (171,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (172,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (173,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (174,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (175,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (176,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (176,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (177,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (177,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (178,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (178,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (179,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (180,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (181,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (182,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (183,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (184,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (185,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (186,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (187,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (187,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (188,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (188,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (189,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (189,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (190,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (191,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (192,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (193,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (193,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (194,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (194,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (195,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (195,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (196,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (197,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (198,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (198,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (199,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (199,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (200,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (201,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (202,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (203,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (203,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (204,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (205,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (205,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (206,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (207,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (207,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (208,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (208,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (209,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (210,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (211,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (211,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (212,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (212,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (213,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (213,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (214,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (214,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (215,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (215,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (216,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (217,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (218,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (219,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (219,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (220,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (220,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (221,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (221,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (222,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (222,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (223,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (224,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (225,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (225,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (226,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (226,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (227,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (227,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (228,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (228,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (229,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (229,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (230,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (230,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (231,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (232,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (233,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (234,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (235,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (236,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (237,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (238,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (238,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (239,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (240,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (241,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (242,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (243,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (244,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (245,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (246,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (246,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (247,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (247,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (248,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (248,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (249,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (249,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (250,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (250,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (251,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (251,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (252,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (253,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (254,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (255,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (256,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (256,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (257,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (257,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (258,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (259,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (259,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (260,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (260,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (261,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (262,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (263,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (264,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (265,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (266,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (267,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (267,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (268,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (269,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (269,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (270,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (270,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (271,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (271,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (272,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (272,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (273,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (274,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (274,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (275,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (275,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (276,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (276,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (277,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (277,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (278,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (278,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (279,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (279,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (280,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (281,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (282,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (283,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (283,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (284,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (284,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (285,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (286,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (286,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (287,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (288,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (289,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (290,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (290,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (291,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (291,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (292,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (292,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (293,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (294,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (295,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (296,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (297,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (298,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (299,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (300,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (301,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (302,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (302,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (303,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (304,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (304,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (305,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (305,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (306,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (306,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (307,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (307,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (308,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (308,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (309,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (310,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (311,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (312,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (313,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (314,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (315,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (315,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (316,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (317,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (318,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (318,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (319,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (319,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (320,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (321,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (322,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (322,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (323,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (323,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (324,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (325,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (326,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (327,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (328,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (329,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (329,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (330,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (330,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (331,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (332,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (332,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (333,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (333,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (334,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (334,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (335,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (336,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (337,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (337,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (338,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (338,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (339,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (339,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (340,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (340,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (341,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (342,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (342,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (343,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (343,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (344,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (344,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (345,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (345,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (346,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (346,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (347,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (347,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (348,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (348,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (349,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (350,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (351,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (352,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (353,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (354,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (355,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (356,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (357,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (357,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (358,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (359,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (360,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (361,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (362,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (363,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (363,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (364,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (364,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (365,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (365,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (366,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (367,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (368,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (369,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (369,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (370,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (371,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (372,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (373,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (373,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (374,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (374,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (375,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (375,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (376,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (376,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (377,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (378,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (379,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (380,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (380,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (381,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (381,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (382,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (383,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (384,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (384,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (385,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (385,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (386,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (387,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (388,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (389,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (389,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (390,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (391,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (391,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (392,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (392,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (393,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (394,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (395,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (395,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (396,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (396,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (397,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (397,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (398,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (398,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (399,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (400,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (400,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (401,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (402,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (403,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (404,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (405,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (406,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (406,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (407,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (407,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (408,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (409,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (410,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (410,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (411,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (411,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (412,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (413,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (413,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (414,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (414,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (415,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (415,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (416,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (416,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (417,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (418,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (419,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (420,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (421,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (422,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (423,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (423,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (424,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (425,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (425,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (426,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (426,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (427,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (428,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (429,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (430,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (430,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (431,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (432,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (433,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (434,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (434,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (435,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (435,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (436,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (436,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (437,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (437,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (438,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (439,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (440,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (441,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (441,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (442,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (442,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (443,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (443,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (444,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (444,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (445,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (445,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (446,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (447,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (448,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (448,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (449,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (450,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (451,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (451,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (452,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (452,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (453,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (453,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (454,'Poison');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (454,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (455,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (456,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (457,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (458,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (458,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (459,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (459,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (460,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (460,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (461,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (461,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (462,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (462,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (463,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (464,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (464,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (465,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (466,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (467,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (468,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (468,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (469,'Bug');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (469,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (470,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (471,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (472,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (472,'Flying');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (473,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (473,'Ground');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (474,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (475,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (475,'Fighting');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (476,'Rock');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (476,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (477,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (478,'Ice');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (478,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (479,'Electric');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (479,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (480,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (481,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (482,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (483,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (483,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (484,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (484,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (485,'Fire');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (485,'Steel');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (486,'Normal');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (487,'Ghost');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (487,'Dragon');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (488,'Psychic');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (489,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (490,'Water');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (491,'Dark');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (492,'Grass');
+INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (493,'Normal');
 
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Absorb','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Acid','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Acid Armor','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Acupressure','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aerial Ace','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aeroblast','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Agility','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Air Cutter','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Air Slash','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Amnesia','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ancientpower','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Jet','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Ring','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Tail','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Arm Thrust','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aromatherapy','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Assist','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Assurance','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Astonish','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Attack Order','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Attract','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aura Sphere','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Aurora Beam','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Avalanche','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Barrage','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Barrier','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Baton Pass','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Beat Up','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Belly Drum','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bide','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bind','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bite','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Blast Burn','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Blaze Kick','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Blizzard','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Block','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Body Slam','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bone Club','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bone Rush','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bonemerang','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bounce','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Brave Bird','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Brick Break','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Brine','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bubble','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bubblebeam','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bug Bite','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bug Buzz','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bulk Up','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bullet Punch','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Bullet Seed','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Calm Mind','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Camouflage','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Captivate','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Charge','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Charge Beam','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Charm','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Chatter','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Clamp','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Close Combat','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Comet Punch','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Confuse Ray','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Confusion','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Constrict','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Conversion','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Conversion 2','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Copycat','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Cosmic Power','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Cotton Spore','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Counter','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Covet','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Crabhammer','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Cross Chop','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Cross Poison','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Crunch','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Crush Claw','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Crush Grip','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Curse','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Cut','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dark Pulse','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dark Void','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Defense Curl','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Defend Order','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Defog','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Destiny Bond','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Detect','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dig','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Disable','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Discharge','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dive','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dizzy Punch','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Doom Desire','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Hit','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Kick','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Team','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Double-edge','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Doubleslap','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Draco Meteor','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Claw','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Dance','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Pulse','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Rage','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Rush','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragonbreath','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Drain Punch','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dream Eater','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Drill Peck','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Dynamicpunch','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Earth Power','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Earthquake','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Egg Bomb','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Embargo','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ember','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Encore','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Endeavor','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Endure','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Energy Ball','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Eruption','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Explosion','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Extrasensory','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Extremespeed','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Facade','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Faint Attack','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fake Out','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fake Tears','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('False Swipe','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Featherdance','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Feint','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Blast','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Fang','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Punch','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Spin','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fissure','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flail','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flame Wheel','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flamethrower','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flare Blitz','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flash','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flash Cannon','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Flatter','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fling','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fly','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Blast','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Energy','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Punch','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Follow Me','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Force Palm','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Foresight','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Frenzy Plant','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Frustration','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Attack','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Cutter','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Swipes','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Future Sight','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Gastro Acid','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Giga Drain','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Giga Impact','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Glare','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Grass Knot','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Grasswhistle','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Gravity','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Growl','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Growth','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Grudge','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Guard Swap','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Guillotine','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Gunk Shot','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Gust','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Gyro Ball','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hail','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hammer Arm','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Harden','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Haze','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Head Smash','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Headbutt','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Bell','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Block','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Order','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Healing Wish','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Heart Swap','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Heat Wave','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Helping Hand','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hi Jump Kick','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hidden Power','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Horn Attack','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Horn Drill','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Howl','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hydro Cannon','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hydro Pump','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Beam','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Fang','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Voice','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Hypnosis','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Ball','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Beam','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Fang','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Punch','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Shard','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Icicle Spear','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Icy Wind','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Imprison','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ingrain','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Defense','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Head','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Tail','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Judgment','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Jump Kick','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Karate Chop','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Kinesis','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Knock Off','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Last Resort','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Lava Plume','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Leaf Blade','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Leaf Storm','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Leech Life','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Leech Seed','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Leer','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Lick','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Light Screen','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Lock-on','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Lovely Kiss','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Low Kick','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Lucky Chant','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Lunar Dance','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Luster Purge','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mach Punch','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Magic Coat','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Magical Leaf','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Magma Storm','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnet Bomb','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnet Rise','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnitude','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Me First','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mean Look','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Meditate','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Drain','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Kick','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Punch','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Megahorn','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Memento','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Burst','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Claw','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Sound','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Meteor Mash','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Metronome','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Milk Drink','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mimic','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mind Reader','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Minimize','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Miracle Eye','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Coat','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Move','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Shot','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mist','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mist Ball','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Moonlight','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Morning Sun','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Bomb','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Shot','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Sport','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud-slap','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Muddy Water','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Nasty Plot','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Natural Gift','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Nature Power','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Needle Arm','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Night Shade','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Night Slash','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Nightmare','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Octazooka','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Odor Sleuth','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Ominous Wind','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Outrage','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Overheat','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Pain Split','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Pay Day','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Payback','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Peck','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Perish Song','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Petal Dance','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Pin Missile','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Pluck','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Fang','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Gas','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Jab','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Sting','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Tail','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Poisonpowder','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Pound','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Powder Snow','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Gem','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Swap','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Trick','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Whip','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Present','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Protect','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psybeam','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psych Up','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psychic','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Boost','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Cut','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Shift','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Psywave','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Punishment','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Pursuit','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Quick Attack','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rage','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rain Dance','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rapid Spin','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Razor Leaf','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Razor Wind','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Recover','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Recycle','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Reflect','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Refresh','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rest','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Return','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Revenge','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Reversal','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Roar','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Roar Of Time','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Blast','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Climb','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Polish','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Slide','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Smash','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Throw','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Tomb','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Wrecker','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Role Play','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rolling Kick','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Rollout','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Roost','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sacred Fire','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Safeguard','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sand Tomb','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sand-attack','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sandstorm','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Scary Face','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Scratch','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Screech','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Secret Power','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Seed Bomb','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Seed Flare','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Seismic Toss','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Selfdestruct','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Ball','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Claw','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Force','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Punch','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Sneak','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sharpen','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sheer Cold','Ice')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Shock Wave','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Signal Beam','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Silver Wind','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sing','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sketch','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Skill Swap','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Skull Bash','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sky Attack','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sky Uppercut','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Slack Off','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Slam','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Slash','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sleep Powder','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sleep Talk','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sludge','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sludge Bomb','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Smellingsalt','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Smog','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Smokescreen','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Snatch','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Snore','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Softboiled','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Solarbeam','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sonicboom','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spacial Rend','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spark','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spider Web','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spike Cannon','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spikes','Ground')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spit Up','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spite','Ghost')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Splash','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Spore','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Stealth Rock','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Steel Wing','Steel')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Stockpile','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Stomp','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Stone Edge','Rock')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Strength','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('String Shot','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Struggle','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Stun Spore','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Submission','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Substitute','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sucker Punch','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sunny Day','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Super Fang','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Superpower','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Supersonic','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Surf','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Swagger','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Swallow','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sweet Kiss','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Sweet Scent','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Swift','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Switcheroo','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Swords Dance','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Synthesis','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Tackle','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Tail Glow','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Tail Whip','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Tailwind','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Take Down','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Taunt','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Teeter Dance','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Teleport','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thief','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thrash','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder Fang','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder Wave','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunderbolt','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunderpunch','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Thundershock','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Tickle','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Torment','Dark')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Toxic','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Toxic Spikes','Poison')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Transform','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Tri Attack','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Trick','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Trick Room','Psychic')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Triple Kick','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Trump Card','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Twineedle','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Twister','Dragon')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('U-turn','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Uproar','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Vacuum Wave','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Vicegrip','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Vine Whip','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Vital Throw','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Volt Tackle','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Wake-up Slap','Fighting')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Gun','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Pulse','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Sport','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Spout','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Waterfall','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Weather Ball','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Whirlpool','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Whirlwind','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Will-o-wisp','Fire')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Wing Attack','Flying')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Wish','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Withdraw','Water')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Wood Hammer','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Worry Seed','Grass')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Wrap','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Wring Out','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('X-scissor','Bug')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Yawn','Normal')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Zap Cannon','Electric')
-INSERT INTO moveHasType (moveName,typeName) VALUES ('Zen Headbutt','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Absorb','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Acid','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Acid Armor','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Acupressure','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aerial Ace','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aeroblast','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Agility','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Air Cutter','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Air Slash','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Amnesia','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ancientpower','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Jet','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Ring','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Tail','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Arm Thrust','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aromatherapy','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Assist','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Assurance','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Astonish','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Attack Order','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Attract','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aura Sphere','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aurora Beam','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Avalanche','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Barrage','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Barrier','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Baton Pass','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Beat Up','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Belly Drum','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bide','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bind','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bite','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Blast Burn','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Blaze Kick','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Blizzard','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Block','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Body Slam','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bone Club','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bone Rush','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bonemerang','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bounce','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Brave Bird','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Brick Break','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Brine','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bubble','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bubblebeam','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bug Bite','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bug Buzz','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bulk Up','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bullet Punch','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bullet Seed','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Calm Mind','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Camouflage','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Captivate','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Charge','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Charge Beam','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Charm','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Chatter','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Clamp','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Close Combat','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Comet Punch','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Confuse Ray','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Confusion','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Constrict','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Conversion','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Conversion 2','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Copycat','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cosmic Power','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cotton Spore','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Counter','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Covet','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crabhammer','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cross Chop','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cross Poison','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crunch','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crush Claw','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crush Grip','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Curse','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cut','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dark Pulse','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dark Void','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Defense Curl','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Defend Order','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Defog','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Destiny Bond','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Detect','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dig','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Disable','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Discharge','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dive','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dizzy Punch','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Doom Desire','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Hit','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Kick','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Team','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double-edge','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Doubleslap','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Draco Meteor','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Claw','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Dance','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Pulse','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Rage','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Rush','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragonbreath','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Drain Punch','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dream Eater','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Drill Peck','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dynamicpunch','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Earth Power','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Earthquake','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Egg Bomb','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Embargo','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ember','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Encore','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Endeavor','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Endure','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Energy Ball','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Eruption','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Explosion','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Extrasensory','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Extremespeed','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Facade','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Faint Attack','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fake Out','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fake Tears','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('False Swipe','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Featherdance','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Feint','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Blast','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Fang','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Punch','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Spin','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fissure','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flail','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flame Wheel','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flamethrower','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flare Blitz','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flash','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flash Cannon','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flatter','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fling','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fly','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Blast','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Energy','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Punch','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Follow Me','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Force Palm','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Foresight','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Frenzy Plant','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Frustration','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Attack','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Cutter','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Swipes','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Future Sight','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gastro Acid','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Giga Drain','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Giga Impact','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Glare','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Grass Knot','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Grasswhistle','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gravity','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Growl','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Growth','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Grudge','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Guard Swap','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Guillotine','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gunk Shot','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gust','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gyro Ball','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hail','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hammer Arm','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Harden','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Haze','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Head Smash','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Headbutt','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Bell','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Block','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Order','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Healing Wish','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heart Swap','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heat Wave','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Helping Hand','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hi Jump Kick','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hidden Power','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Horn Attack','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Horn Drill','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Howl','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hydro Cannon','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hydro Pump','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Beam','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Fang','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Voice','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hypnosis','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Ball','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Beam','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Fang','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Punch','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Shard','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Icicle Spear','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Icy Wind','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Imprison','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ingrain','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Defense','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Head','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Tail','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Judgment','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Jump Kick','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Karate Chop','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Kinesis','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Knock Off','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Last Resort','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lava Plume','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leaf Blade','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leaf Storm','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leech Life','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leech Seed','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leer','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lick','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Light Screen','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lock-on','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lovely Kiss','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Low Kick','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lucky Chant','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lunar Dance','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Luster Purge','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mach Punch','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magic Coat','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magical Leaf','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magma Storm','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnet Bomb','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnet Rise','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnitude','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Me First','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mean Look','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Meditate','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Drain','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Kick','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Punch','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Megahorn','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Memento','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Burst','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Claw','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Sound','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Meteor Mash','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metronome','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Milk Drink','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mimic','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mind Reader','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Minimize','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Miracle Eye','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Coat','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Move','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Shot','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mist','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mist Ball','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Moonlight','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Morning Sun','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Bomb','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Shot','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Sport','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud-slap','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Muddy Water','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Nasty Plot','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Natural Gift','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Nature Power','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Needle Arm','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Night Shade','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Night Slash','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Nightmare','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Octazooka','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Odor Sleuth','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ominous Wind','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Outrage','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Overheat','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pain Split','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pay Day','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Payback','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Peck','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Perish Song','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Petal Dance','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pin Missile','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pluck','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Fang','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Gas','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Jab','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Sting','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Tail','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poisonpowder','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pound','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Powder Snow','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Gem','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Swap','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Trick','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Whip','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Present','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Protect','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psybeam','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psych Up','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psychic','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Boost','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Cut','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Shift','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psywave','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Punishment','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pursuit','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Quick Attack','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rage','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rain Dance','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rapid Spin','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Razor Leaf','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Razor Wind','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Recover','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Recycle','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Reflect','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Refresh','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rest','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Return','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Revenge','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Reversal','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Roar','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Roar Of Time','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Blast','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Climb','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Polish','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Slide','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Smash','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Throw','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Tomb','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Wrecker','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Role Play','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rolling Kick','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rollout','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Roost','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sacred Fire','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Safeguard','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sand Tomb','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sand-attack','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sandstorm','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Scary Face','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Scratch','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Screech','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Secret Power','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Seed Bomb','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Seed Flare','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Seismic Toss','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Selfdestruct','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Ball','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Claw','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Force','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Punch','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Sneak','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sharpen','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sheer Cold','Ice');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shock Wave','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Signal Beam','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Silver Wind','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sing','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sketch','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Skill Swap','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Skull Bash','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sky Attack','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sky Uppercut','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Slack Off','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Slam','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Slash','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sleep Powder','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sleep Talk','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sludge','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sludge Bomb','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Smellingsalt','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Smog','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Smokescreen','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Snatch','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Snore','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Softboiled','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Solarbeam','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sonicboom','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spacial Rend','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spark','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spider Web','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spike Cannon','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spikes','Ground');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spit Up','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spite','Ghost');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Splash','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spore','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stealth Rock','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Steel Wing','Steel');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stockpile','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stomp','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stone Edge','Rock');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Strength','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('String Shot','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Struggle','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stun Spore','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Submission','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Substitute','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sucker Punch','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sunny Day','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Super Fang','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Superpower','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Supersonic','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Surf','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swagger','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swallow','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sweet Kiss','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sweet Scent','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swift','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Switcheroo','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swords Dance','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Synthesis','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tackle','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tail Glow','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tail Whip','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tailwind','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Take Down','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Taunt','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Teeter Dance','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Teleport','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thief','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thrash','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder Fang','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder Wave','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunderbolt','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunderpunch','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thundershock','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tickle','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Torment','Dark');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Toxic','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Toxic Spikes','Poison');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Transform','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tri Attack','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Trick','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Trick Room','Psychic');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Triple Kick','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Trump Card','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Twineedle','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Twister','Dragon');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('U-turn','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Uproar','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vacuum Wave','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vicegrip','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vine Whip','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vital Throw','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Volt Tackle','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wake-up Slap','Fighting');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Gun','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Pulse','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Sport','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Spout','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Waterfall','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Weather Ball','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Whirlpool','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Whirlwind','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Will-o-wisp','Fire');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wing Attack','Flying');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wish','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Withdraw','Water');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wood Hammer','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Worry Seed','Grass');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wrap','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wring Out','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('X-scissor','Bug');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Yawn','Normal');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Zap Cannon','Electric');
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Zen Headbutt','Psychic');
 
 INSERT INTO isEffectiveAgainst (atkTypeName,defTypeName) VALUES ('Fire','Grass');
 INSERT INTO isEffectiveAgainst (atkTypeName,defTypeName) VALUES ('Fire','Ice');
