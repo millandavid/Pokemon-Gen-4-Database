@@ -2,14 +2,11 @@
 --https://www.serebii.net/
 
 --TODO
---Delete learnsBy
---finish moveHasType
 --pokeAbilities (no hidden?)
 --pokeAtLocation (semi hard. go to pokemon page and check each ruote number and add "route" to end of it?)
 --pokeLearnsMoves (semi hard unless can easily count amount of moves)
 
-
-
+--Deleted learnsBy
 --changed baseStats to HP, DEF....
 --clean up relations first then entities
 --should change effortValues to individual ones like baseStats?
@@ -69,7 +66,7 @@ create table move ( --done
     accuracy integer,
 	description text,
     effect text,
-    battleType text,
+    --battleType text,
     category text,
     powerPoints integer,
     speedPrio integer
@@ -103,12 +100,12 @@ create table pokemonAbilities (
     primary key (dexNum, ability)
 );
 
-create table pokemonLearnsMoveBy ( --MIGHT DELETE
-    dexNum integer references pokemon(dexNum),
-    moveName varchar(100) references move(moveName),
-    learnsBy varchar(100),
-    primary key (dexNum, moveName, learnsBy)
-);
+--create table pokemonLearnsMoveBy ( --MIGHT DELETE
+    --dexNum integer references pokemon(dexNum),
+    --moveName varchar(100) references move(moveName),
+    --learnsBy varchar(100),
+    --primary key (dexNum, moveName, learnsBy)
+--);
 
 --relatations
 
@@ -124,7 +121,7 @@ create table pokemonLearnsMoves (
     primary key (dexNum, moveName)
 );
 
-create table moveHasType( 
+create table moveHasType( --done
     moveName varchar(100) references move(moveName),
     typeName varchar(100) references type(typeName),
     primary key (moveName, typeName)
@@ -662,473 +659,473 @@ INSERT INTO type (typeName) VALUES('Rock');
 INSERT INTO type (typeName) VALUES('Steel');
 INSERT INTO type (typeName) VALUES('Water');
 
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Absorb',20,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','grass','special',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Acid',40,100,'May lower opponents SP. DEF one stage.','No Added Effect','poison','special',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Acid Armor',0,0,'Raises users DEFENSE two stages.','Points of next appeal doubles','poison','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Acupressure',0,0,'','Points of next appeal doubles','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aerial Ace',60,0,'Cannot miss.','Points +2 if first to appeal','flying','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aeroblast',100,95,'Has high critical hit ratio.','Points +3 if previous pokemon reaches max voltage of a judge','flying','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Agility',0,0,'Raises users SPEED two stages.','Appeals first in the next turn','psychic','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Air Cutter',55,95,'Has high critical hit ratio.','No Added Effect','flying','special',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Air Slash',75,95,'May cause opponent to flinch.','Points +2 if first to appeal','flying','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Amnesia',0,0,'Raises users SP. DEF two stages.','Points of next appeal doubles','psychic','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ancientpower',60,100,'May raise all users stats one stage.','Points +2 if last to appeal','rock','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aqua Jet',40,100,'Always strikes first.','Appeals first in the next turn','water','physical',20,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aqua Ring',0,0,'','Points equal to the voltage of the judge','water','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aqua Tail',90,90,'No effect.','No Added Effect','water','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Arm Thrust',15,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','fighting','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aromatherapy',0,0,'Heals partys status problems.','Points equal to the voltage of the judge','grass','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Assist',0,0,'Uses a random move from another Pokémon in the team.','Order of appealing is random in the next turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Assurance',50,100,'','Points doubles if last to appeal','dark','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Astonish',30,100,'May cause opponent to flinch.','No Added Effect','ghost','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Attack Order',90,100,'Has high critical hit ratio.','Increases judges voltage by 2','bug','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Attract',0,100,'Induces ATTRACT.','Pokemon after self cannot lower any voltage in that turn','normal','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aura Sphere',90,0,'Cannot miss.','Points +2 if first to appeal','fighting','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Aurora Beam',65,100,'May lower opponents ATTACK one stage.','Points +2 if first to appeal','ice','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Avalanche',60,100,'Power doubles if hit before the attack.','Points doubles if last to appeal','ice','physical',10,-4);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Barrage',15,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Barrier',0,0,'Raises users DEFENSE two stages.','Pokemon after self cannot raise any voltage in that turn','psychic','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Baton Pass',0,0,'Switches out the user but status changes remain.','Points equal 4 minus voltage of judge','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Beat Up',10,100,'Does additional damage for every Pokémon in trainers team.','Can be used twice consecutively','dark','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Belly Drum',0,0,'Cuts half of users maximum HP and maximizes ATTACK.','Points of next appeal doubles','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bide',1,0,'User takes hits for 2 rounds, then strikes back.','Points doubles if last to appeal','normal','physical',10,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bind',15,75,'Traps opponent.','First to appeal +1','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bite',60,100,'May cause opponent to flinch.','No Added Effect','dark','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Blast Burn',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','fire','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Blaze Kick',85,90,'Has high critical hit ratio. May induce burn.','Points +2 if first to appeal','fire','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Blizzard',120,70,'','Points +2 if first to appeal','ice','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Block',0,0,'Prevents the opponent from escaping.','Pokemon after self cannot raise any voltage in that turn','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Body Slam',85,100,'May induce paralysis.','No Added Effect','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bone Club',65,85,'May cause opponent to flinch.','No Added Effect','ground','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bone Rush',25,80,'Attacks 2-5 times in a row.','Can be used twice consecutively','ground','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bonemerang',50,90,'Attacks twice in a row.','Can be used twice consecutively','ground','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bounce',85,85,'','Points +3 if appeals to the same judge with other pokemon','flying','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Brave Bird',120,100,'User takes recoil damage.','Points +2 if last to appeal','flying','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Brick Break',75,100,'Destroys protective barriers.','No Added Effect','fighting','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Brine',65,100,'','Increases judges voltage by 2','water','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bubble',20,100,'May lower opponents SPEED one stage.','Appeals last in the next turn','water','special',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bubblebeam',65,100,'May lower opponents SPEED one stage.','Appeals last in the next turn','water','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bug Bite',60,100,'','Receives voltage points if previous pokemon reaches max voltage','bug','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bug Buzz',90,100,'May lower opponents SP. DEF one stage.','Increases judges voltage by 2','bug','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bulk Up',0,0,'Raises users ATTACK and DEFENSE one stage.','Points of next appeal doubles','fighting','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bullet Punch',40,100,'Always strikes first.','Appeals first in the next turn','steel','physical',30,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Bullet Seed',10,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','grass','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Calm Mind',0,0,'Raises users SP. ATK and SP. DEF one stage.','Points of next appeal doubles','psychic','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Camouflage',0,0,'User changes type depending on the location.','Pokemon after self cannot raise any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Captivate',0,100,'','Pokemon after self cannot lower any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Charge',0,0,'Increases the power of the next ELECTRIC attack.','Points of next appeal doubles','electric','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Charge Beam',50,90,'','Points +2 if firt to appeal','electric','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Charm',0,100,'Lowers opponents ATTACK two stages.','Pokemon after self cannot lower any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Chatter',60,100,'','Points +3 if lowest number of points in that turn','flying','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Clamp',35,75,'Traps opponent.','No Added Effect','water','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Close Combat',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','fighting','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Comet Punch',18,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Confuse Ray',0,100,'May induce CONFUSION.','Lowers voltage of all judges by 1','ghost','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Confusion',50,100,'May induce CONFUSION.','No Added Effect','psychic','special',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Constrict',10,100,'May lower opponents SPEED one stage.','First to appeal +1','normal','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Conversion',0,0,'User changes type into an own moves type.','Points +3 if lowest number of points in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Conversion 2',0,0,'User becomes a type resistant to opponents last attack.','Points +3 if lowest number of points in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Copycat',0,0,'','Receives voltage points if previous pokemon reaches max voltage','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Cosmic Power',0,0,'Raises users DEFENSE and SP. DEF one stage.','Points of next appeal doubles','psychic','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Cotton Spore',0,85,'Lowers opponents SPEED two stages.','Appeals first in the next turn','grass','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Counter',1,100,'If hit by a physical attack, deals double the damage received.','Points doubles if last to appeal','fighting','physical',20,-5);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Covet',40,100,'May steal opponents item (temporarily in trainer battles).','Receives voltage points if previous pokemon reaches max voltage','normal','physical',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Crabhammer',90,85,'Has high critical hit ratio.','Points +2 if last to appeal','water','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Cross Chop',100,80,'Has high critical hit ratio.','Points +2 if last to appeal','fighting','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Cross Poison',70,100,'Has high critical hit ratio. May induce poison.','No Added Effect','poison','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Crunch',80,100,'May lower opponents DEFENSE one stage.','Points +2 if last to appeal','dark','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Crush Claw',75,95,'May lower opponents DEFENSE one stage.','No Added Effect','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Crush Grip',1,100,'This attack\s Base Power is anything from 1 up to 110 making it a fairly powerful attack to be used.','','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Curse',0,0,'Ghost type Pokémon: User loses half their maximum HP, and the opponent gets a Nightmare.','First to appeal +1','curse','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Cut',50,95,'No effect.','No Added Effect','normal','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dark Pulse',80,100,'May cause opponent to flinch.','Points +2 if first to appeal','dark','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dark Void',0,80,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','dark','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Defense Curl',0,0,'Raises users DEFENSE one stage. Damage from ROLLOUT will be higher.','Pokemon after self cannot raise any voltage in that turn','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Defend Order',0,0,'Raises users DEFENSE and SP. DEF one stage.','Points of next appeal doubles','bug','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Defog',0,0,'','Pokemon after self cannot raise any voltage in that turn','flying','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Destiny Bond',0,0,'If the user faints, the opponent will also faint.','Points +15 if all pokemon appeal to the same judge','ghost','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Detect',0,0,'Evades opponents next attack; the moves accuracy drops.','Points equal 4 minus voltage of judge','fighting','other',5,3);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dig',80,100,'','Points +3 if appeals to the same judge with other pokemon','ground','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Disable',0,80,'Disables opponents last move.','Pokemon after self cannot lower any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Discharge',80,100,'May induce paralysis.','Points +2 if first to appeal','electric','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dive',80,100,'','Points +3 if appeals to the same judge with other pokemon','water','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dizzy Punch',70,100,'May induce CONFUSION.','Points equal 4 minus voltage of judge','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Doom Desire',120,85,'Damage delays 2 turns.','Points +2 if first to appeal','steel','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Double Hit',35,90,'Attacks twice in a row.','Can be used twice consecutively','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Double Kick',30,100,'Attacks twice in a row.','Can be used twice consecutively','fighting','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Double Team',0,0,'Raises users EVASIVENESS one stage.','Appeals first in the next turn','normal','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Double-edge',120,100,'User takes recoil damage.','Points +15 if all pokemon appeal to the same judge','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Doubleslap',15,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Draco Meteor',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches max voltage of a judge','dragon','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dragon Claw',80,100,'No effect.','Points +2 if first to appeal','dragon','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dragon Dance',0,0,'Raises users ATTACK and SPEED one stage.','Points of next appeal doubles','dragon','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dragon Pulse',90,100,'No effect.','Increases judges voltage by 2','dragon','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dragon Rage',1,100,'Inflicts 40 HP damage.','No Added Effect','dragon','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dragon Rush',100,75,'May cause opponent to flinch.','Points +2 if last to appeal','dragon','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dragonbreath',60,100,'May induce paralysis.','Points +2 if first to appeal','dragon','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Drain Punch',60,100,'User recovers half the damage inflicted.','No Added Effect','fighting','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dream Eater',100,100,'User recovers half the damage inflicted on a sleeping opponent.','Points +3 if two pokemon raise a judges voltage consecutively','psychic','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Drill Peck',80,100,'No effect.','No Added Effect','flying','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Dynamicpunch',100,50,'May induce CONFUSION.','Points +2 if last to appeal','fighting','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Earth Power',90,100,'May lower opponents SP. DEF one stage.','Points +2 if last to appeal','ground','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Earthquake',100,100,'Hits everyone on the field.','Points +2 if last to appeal','ground','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Egg Bomb',100,75,'No effect.','No Added Effect','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Embargo',0,100,'','Pokemon after self cannot raise any voltage in that turn','dark','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ember',40,100,'May induce burn.','No Added Effect','fire','special',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Encore',0,100,'Opponent repears the last move.','Points +3 if two pokemon raise a judges voltage consecutively','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Endeavor',1,100,'Power rises if users HP are less than opponents HP.','Points doubles if last to appeal','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Endure',0,0,'Survives any attack for one turn leaving at least 1 HP but moves accuracy drops.','Pokemon after self cannot raise any voltage in that turn','normal','other',10,3);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Energy Ball',80,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','grass','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Eruption',150,100,'Power wise, this attack has a Base Power of 150 but that completely changes all depending on the HP','','fire','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Explosion',250,100,'User faints.','Points +15 if all pokemon appeal to the same judge','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Extrasensory',80,100,'May cause opponent to flinch.','Points +2 if first to appeal','psychic','special',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Extremespeed',80,100,'Always strikes first.','Appeals first in the next turn','normal','physical',5,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Facade',70,100,'ATTACK is doubled when burned, paralyzed, or poisoned.','Points doubles if last to appeal','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Faint Attack',60,0,'Cannot miss.','Points +2 if last to appeal','dark','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fake Out',40,100,'Causes opponent to flinch. Attacks first.','Points +2 if first to appeal','normal','physical',10,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fake Tears',0,100,'Lowers opponents SP. DEF two stages.','Pokemon after self cannot lower any voltage in that turn','dark','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('False Swipe',40,100,'Leaves the foe with at least 1 HP.','Points equal 4 minus voltage of judge','normal','physical',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Featherdance',0,100,'Lowers opponents ATTACK two stages.','Pokemon after self cannot lower any voltage in that turn','flying','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Feint',50,100,'','Points equal 4 minus voltage of judge','normal','physical',10,2);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fire Blast',120,85,'May induce burn.','Points +2 if first to appeal','fire','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fire Fang',65,95,'','No Added Effect','fire','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fire Punch',75,100,'May induce burn.','Points +2 if first to appeal','fire','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fire Spin',15,70,'Traps opponent.','First to appeal +1','fire','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fissure',1,30,'May cause one-hit KO.','Oints +15 if all pokemon appeal to the same judge','ground','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flail',1,100,'Inflicts more damage when the users HP is down.','Points doubles if last to appeal','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flame Wheel',60,100,'May induce burn.','Can be used twice consecutively','fire','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flamethrower',95,100,'May induce burn.','Points +2 if first to appeal','fire','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flare Blitz',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','fire','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flash',0,100,'Lowers opponents ACCURACY one stage.','Lowers voltage of all judges by 1','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flash Cannon',80,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','steel','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Flatter',0,100,'Induces CONFUSE. Raises opponents SP. ATK two stages.','Pokemon after self cannot lower any voltage in that turn','dark','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fling',1,100,'As the Base Power can get up to 130, it adds major strategy possibilities.','Induces Burn status to holder','dark','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fly',90,95,'The user is protected the first turn, attacks the second turn.','Points +3 if appeals to the same judge with other pokemon','flying','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Focus Blast',120,70,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','fighting','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Focus Energy',0,0,'Increases users critical hit rate.','Points of next appeal doubles','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Focus Punch',150,100,'User flinches if hit before attacking.','Points +3 if appeals to the same judge with other pokemon','fighting','physical',20,-3);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Follow Me',0,0,'Opponent only attacks the user. Best used in 2VS2 battles.','Order of appealing is random in the next turn','normal','other',20,3);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Force Palm',60,100,'May induce paralysis.','Points +2 if last to appeal','fighting','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Foresight',0,0,'Resets opponents EVASIVENESS.','Points +3 if two pokemon raise a judges voltage consecutively','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Frenzy Plant',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','grass','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Frustration',1,100,'Frustration is the move that utilises the Happiness in the negative light, by rewarding the amount the Pokémon hates the trainer.','','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fury Attack',15,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fury Cutter',10,95,'Moves power raises if it hits.','Can be used twice consecutively','bug','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Fury Swipes',18,80,'Attacks 2-5 times in a row.','Can be used twice consecutively','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Future Sight',80,90,'Damage delays 2 turns.','Points +2 if first to appeal','psychic','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Gastro Acid',0,100,'','Pokemon after self cannot raise any voltage in that turn','poison','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Giga Drain',60,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','grass','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Giga Impact',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Glare',0,75,'Induces paralysis','Pokemon after self cannot lower any voltage in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Grass Knot',1,100,'This attacks power is based on your targets weight.','','grass','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Grasswhistle',0,55,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','grass','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Gravity',0,0,'','Pokemon after self cannot raise any voltage in that turn','psychic','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Growl',0,100,'Lowers opponents ATTACK one stage.','Pokemon after self cannot lower any voltage in that turn','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Growth',0,0,'Raises users SP. ATK one stage.','Points of next appeal doubles','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Grudge',0,0,'If the user faints, deletes the PP of opponents last move.','Lowers voltage of all judges by 1','ghost','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Guard Swap',0,0,'','Points equal 4 minus voltage of judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Guillotine',1,30,'May cause one-hit KO.','Points +15 if all pokemon appeal to the same judge','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Gunk Shot',120,70,'May induce poison.','No Added Effect','poison','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Gust',40,100,'Hits even if opponent is using FLY.','No Added Effect','flying','special',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Gyro Ball',1,100,'This attacks Base Power is anything from 1 up to 150 making it a very powerful attack to be used.','','steel','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hail',0,0,'Causes Hailstorm for 5 rounds.','Pokemon after self cannot raise any voltage in that turn','ice','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hammer Arm',100,90,'','Appeals last in the next turn','fighting','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Harden',0,0,'Raises users DEFENSE one stage.','Pokemon after self cannot raise any voltage in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Haze',0,0,'Resets all ability stages.','Pokemon after self cannot raise any voltage in that turn','ice','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Head Smash',150,80,'','Points +3 if previous pokemon reaches max voltage of a judge','rock','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Headbutt',70,100,'May cause opponent to flinch.','No Added Effect','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Heal Bell',0,0,'Heals partys status problems.','Points equal to the voltage of the judge','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Heal Block',0,100,'','Pokemon after self cannot raise any voltage in that turn','psychic','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Heal Order',0,0,'User recovers half the maximum HP.','Points equal to the voltage of the judge','bug','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Healing Wish',0,0,'','Points equal to the voltage of the judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Heart Swap',0,0,'','Points equal 4 minus voltage of judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Heat Wave',100,90,'May induce burn.','Points +2 if first to appeal','fire','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Helping Hand',0,0,'Boosts receivers attacks. Best used in 2VS2 battles.','Points +3 if two pokemon raise a judges voltage consecutively','normal','other',20,5);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hi Jump Kick',100,90,'If attack misses, user takes 1/8 HP of damage.','No Added Effect','fighting','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hidden Power',1,100,'Power and type depend on users IVs.','Points +3 if lowest number of points in that turn','normal','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Horn Attack',65,100,'No effect.','No Added Effect','normal','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Horn Drill',1,30,'May cause one-hit KO.','Points +15 if all pokemon appeal to the same judge','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Howl',0,0,'Raises users ATTACK one stage.','Points of next appeal doubles','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hydro Cannon',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','water','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hydro Pump',120,80,'No effect.','Points +2 if first to appeal','water','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hyper Beam',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','normal','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hyper Fang',80,90,'May cause opponent to flinch.','Points +2 if last to appeal','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hyper Voice',90,100,'No effect.','No Added Effect','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Hypnosis',0,70,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','psychic','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ice Ball',30,90,'Uses the same move for 5 turns; moves power raises if it hits.','Can be used twice consecutively','ice','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ice Beam',95,100,'May induce freeze.','Points +2 if first to appeal','ice','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ice Fang',65,95,'','No Added Effect','ice','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ice Punch',75,100,'May induce freeze.','Points +2 if first to appeal','ice','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ice Shard',40,100,'Always strikes first.','Appeals first in the next turn','ice','physical',30,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Icicle Spear',10,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','ice','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Icy Wind',55,95,'May lower opponents SPEED one stage.','Appeals last in the next turn','ice','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Imprison',0,0,'Opponent cannot use move that user knows.','Points +3 if two pokemon raise a judges voltage consecutively','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ingrain',0,0,'Recovers HP every turn. User cannot switch.','First to appeal +1','grass','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Iron Defense',0,0,'Raises users DEFENSE two stages.','Pokemon after self cannot raise any voltage in that turn','steel','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Iron Head',80,100,'May cause opponent to flinch.','Points +2 if last to appeal','steel','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Iron Tail',100,75,'May lower opponents DEFENSE one stage.','Points +2 if last to appeal','steel','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Judgment',100,100,'','Order of appealing is random in the next turn','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Jump Kick',85,95,'If attack misses, user takes 1/8 HP of damage.','No Added Effect','fighting','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Karate Chop',50,100,'Has high critical hit ratio.','No Added Effect','fighting','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Kinesis',0,80,'Lowers opponents ACCURACY one stage.','Points of next appeal doubles','psychic','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Knock Off',20,100,'Knocks down opponents held item to prevent its use.','No Added Effect','dark','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Last Resort',130,100,'','First to appeal +1','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Lava Plume',80,100,'May induce burn.','Points +2 if first to appeal','fire','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Leaf Blade',90,100,'Has high critical hit ratio.','Points +2 if first to appeal','grass','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Leaf Storm',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches max voltage of a judge','grass','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Leech Life',20,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','bug','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Leech Seed',0,90,'User steals HP from the opponent every turn.','First to appeal +1','grass','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Leer',0,100,'Lowers opponents DEFENSE one stage.','Pokemon after self cannot lower any voltage in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Lick',20,100,'May induce paralysis.','Points equal 4 minus voltage of judge','ghost','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Light Screen',0,0,'Halves SP. ATK damage inflicted on user.','Pokemon after self cannot raise any voltage in that turn','psychic','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Lock-on',0,0,'Ensures that users next move will not fail.','Points +3 if two pokemon raise a judges voltage consecutively','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Lovely Kiss',0,75,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Low Kick',1,100,'This attacks power is based on your targets weight.','','fighting','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Lucky Chant',0,0,'','Pokemon after self cannot raise any voltage in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Lunar Dance',0,0,'','Points equal to the voltage of the judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Luster Purge',70,100,'May lower opponents SP. DEF one stage.','Points +3 if previous pokemon reaches a max voltage in a judge','psychic','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mach Punch',40,100,'Always strikes first.','Appeals first in the next turn','fighting','physical',30,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Magic Coat',0,0,'Magic Coat will reflect the moves used by the opponent on the Pokémon during the next turn back at them.','If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack.','psychic','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Magical Leaf',60,0,'Cannot miss.','Points +2 if first to appeal','grass','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Magma Storm',120,70,'Traps opponent.','Can be used twice consecutively','fire','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Magnet Bomb',60,0,'Cannot miss.','No Added Effect','steel','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Magnet Rise',0,0,'','Pokemon after self cannot raise any voltage in that turnt','electric','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Magnitude',1,100,'When the attack is used, the screen will come up with a number saying the Magnitude of the attack.','','ground','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Me First',0,0,'','Appeals first in the next turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mean Look',0,0,'Prevents the opponent from escaping.','Lowers voltage of all judges by 1','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Meditate',0,0,'Raises users ATTACK one stage.','Points of next appeal doubles','psychic','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mega Drain',40,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','grass','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mega Kick',120,75,'No effect.','Points +2 if last to appeal','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mega Punch',80,85,'No effect.','Points +2 if last to appeal','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Megahorn',120,85,'No effect.','Points +2 if last to appeal','bug','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Memento',0,100,'Lowers opponents stats. User faints.','Points +15 if all pokemon appeal to the same judge','dark','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Metal Burst',1,100,'','Points doubles if last to appeal','steel','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Metal Claw',50,95,'May raise users ATTACK one stage.','Points +2 if last to appeal','steel','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Metal Sound',0,85,'Lowers opponents SP. DEF two stages.','Lowers voltage of all judges by 1','steel','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Meteor Mash',100,85,'May raise users ATTACK one stage.','Points +2 if last to appeal','steel','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Metronome',0,0,'Uses a random move.','Order of appealing is random in the next turn','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Milk Drink',0,0,'User recovers half the maximum HP.','Points equal to the voltage of judge','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mimic',0,0,'Copies opponents last move.','Receives voltage points if previous pokemon reaches max voltage','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mind Reader',0,0,'Ensures that users next move will not fail.','Points +3 if two pokemon raise a judges voltage consecutively','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Minimize',0,0,'Raises users EVASIVENESS one stage.','Pokemon after self cannot raise any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Miracle Eye',0,0,'','Points +3 if two pokemon raise a judges voltage consecutively','psychic','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mirror Coat',1,100,'Counters the foes special attack at double the power.','Points doubles if last to appeal','psychic','special',20,-5);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mirror Move',0,0,'User does the last move used by opponent.','Points doubles if last to appeal','flying','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mirror Shot',65,85,'May lower opponents ACCURACY one stage.','Points +2 if first to appeal','steel','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mist',0,0,'Stops ability reduction.','Pokemon after self cannot raise any voltage in that turn','ice','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mist Ball',70,100,'May lower opponents SP. ATK one stage.','Points +3 if previous pokemon reaches a max voltage in a judge','psychic','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Moonlight',0,0,'User restores HP.','number of points is equal to the voltage of the judge','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Morning Sun',0,0,'User restores HP.','number of points is equal to the voltage of the judge','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mud Bomb',65,85,'May lower opponents ACCURACY one stage.','Points +2 if last to appeal','ground','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mud Shot',55,95,'May lower opponents SPEED one stage.','Appeals last in the next turn','ground','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mud Sport',0,0,'Lowers the power of ELECTRIC moves.','Pokemon after self cannot raise any voltage in that turn','ground','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Mud-slap',20,100,'May lower opponents ACCURACY one stage.','No Added Effect','ground','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Muddy Water',95,85,'May lower opponents ACCURACY one stage.','Points +2 if last to appeal','water','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Nasty Plot',0,0,'Raises users SP. ATK two stages.','Points of next appeal doubles','dark','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Natural Gift',1,100,'','Points +2 if last to appeal','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Nature Power',0,0,'Depends on battle location.','Order of appealing is random in the next turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Needle Arm',60,100,'May cause opponent to flinch.','No Added Effect','grass','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Night Shade',1,100,'Inflicts damage equal to the users level.','No Added Effect','ghost','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Night Slash',70,100,'Has high critical hit ratio.','No Added Effect','dark','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Nightmare',0,100,'Inflicts 1/4 damage on a sleeping foe every turn.','Pokemon after self cannot lower any voltage in that turn','ghost','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Octazooka',65,85,'May lower opponents ACCURACY one stage.','Raises judges voltage by 2','water','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Odor Sleuth',0,0,'Resets opponents EVASIVENESS.','Points +3 if two pokemon raise a judges voltage consecutively','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Ominous Wind',60,100,'May raise all users stats one stage.','Points of next appeal doubles','ghost','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Outrage',120,100,'User uses the same attack for 2-3 turns then becomes confused.','Can be used twice consecutively','dragon','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Overheat',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches a max voltage in a judge','fire','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Pain Split',0,0,'User and opponent share HP.','Lowers voltage of all judges by 1','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Pay Day',40,100,'User gains coins after battle.','Points +3 if lowest number of points in that turn','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Payback',50,100,'','Points +3 if appeals to the same judge with other pokemon','dark','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Peck',35,100,'No effect.','No Added Effect','flying','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Perish Song',0,0,'All Pokémon on the field faint in 3 turns.','Lowers voltage of all judges by 1','normal','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Petal Dance',90,100,'User uses the same attack for 2-3 turns then becomes confused.','First to appeal +1','grass','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Pin Missile',14,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','bug','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Pluck',60,100,'','Receives voltage points if previous pokemon reaches max voltage','flying','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Poison Fang',50,100,'May induce severe poison.','Increases judges voltage by 2','poison','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Poison Gas',0,55,'Induces poison.','No Added Effect','poison','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Poison Jab',80,100,'May induce poison.','Increases judges voltage by 2','poison','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Poison Sting',15,100,'May induce poison.','Pokemon after self cannot lower any voltage in that turn','poison','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Poison Tail',50,100,'Has high critical hit ratio. May induce poison.','Increases judges voltage by 2','poison','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Poisonpowder',0,75,'Induces poison.','Pokemon after self cannot lower any voltage in that turn','poison','other',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Pound',40,100,'No effect.','No Added Effect','normal','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Powder Snow',40,100,'May induce freeze.','No Added Effect','ice','special',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Power Gem',70,100,'No effect.','No Added Effect','rock','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Power Swap',0,0,'','Points equal 4 minus voltage of judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Power Trick',0,0,'','Points equal 4 minus voltage of judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Power Whip',120,85,'No effect.','No Added Effect','grass','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Present',1,90,'May hit or heal the user or the opponent.','Points equal 4 minus voltage of judge','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Protect',0,0,'Evades opponents next attack; the moves accuracy drops.','Points equal 4 minus voltage of judge','normal','other',10,3);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psybeam',65,100,'May induce CONFUSION.','Points +2 if first to appeal','psychic','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psych Up',0,0,'Copies opponents stat changes.','Points of next appeal doubles','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psychic',90,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','psychic','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psycho Boost',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches a max voltage in a judge','psychic','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psycho Cut',70,100,'Has high critical hit ratio.','Points +2 if first to appeal','psychic','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psycho Shift',0,90,'','Points equal 4 minus voltage of judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Psywave',1,80,'Inflicts damage equal to 0.5 to 1.5 x  users level.','No Added Effect','psychic','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Punishment',1,100,'Punishment has a rather low Base Power to start of with.','','dark','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Pursuit',40,100,'Inflicts double damage if the opponent is switching out.','Points +3 if two pokemon raise a judges voltage consecutively','dark','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Quick Attack',40,100,'Always strikes first.','Appeals first in the next turn','normal','physical',30,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rage',20,100,'Users ATTACK raises if hit.','Points of next appeal doubles','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rain Dance',0,0,'Causes Rain for 5 rounds.','Pokemon after self cannot raise any voltage in that turn','water','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rapid Spin',20,100,'User is becomes free from moves like Wrap, Bind and Leech Seed.','Points +2 if first to appeal','normal','physical',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Razor Leaf',55,95,'Has high critical hit ratio.','No Added Effect','grass','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Razor Wind',80,100,'Has high critical hit ratio.','Points +3 if appeals to the same judge with other pokemon','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Recover',0,0,'User recovers half the maximum HP.','Points equal to the voltage of the judge','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Recycle',0,0,'Recycles an already used held item.','Receives voltage points if previous pokemon reaches max voltage','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Reflect',0,0,'Halves ATTACK damage inflicted on user.','Pokemon after self cannot raise any voltage in that turn','psychic','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Refresh',0,0,'Heals poisoning, paralysis, or a burn.','Points equal to the voltage of judge','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rest',0,0,'User restores health, then sleeps.','Points equal to the voltage of judge','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Return',1,100,'Return is the move that utilises the Happiness in a more positive light, by rewarding the amount the Pokémon likes the trainer.','','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Revenge',60,100,'Power doubles if hit before the attack.','Points doubles if last to appeal','fighting','physical',10,-4);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Reversal',1,100,'Inflicts more damage when the users HP is down.','Points doubles if last to appeal','fighting','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Roar',0,100,'Ends battle. Switches the opponent Pokémon in a trainer battle.','Pokemon after self cannot lower any voltage in that turn','normal','other',20,-6);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Roar Of Time',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','dragon','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Blast',25,80,'Attacks 2-5 times in a row.','Can be used twice consecutively','rock','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Climb',90,85,'May induce CONFUSION.','Points +2 if last to appeal','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Polish',0,0,'Raises users SPEED two stages.','Appeals first in the next turn','rock','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Slide',75,90,'May cause opponent to flinch.','No Added Effect','rock','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Smash',40,100,'May lower opponents DEFENSE one stage.','Points +2 if last to appeal','fighting','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Throw',50,90,'No effect.','No Added Effect','rock','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Tomb',50,80,'May lower opponents SPEED one stage.','Appeals last in the next turn','rock','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rock Wrecker',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','rock','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Role Play',0,0,'Copies targets ability.','Points +3 if lowest number of points in that turn','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rolling Kick',60,85,'May cause opponent to flinch.','No Added Effect','fighting','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Rollout',30,90,'Uses the same move for 5 turns; moves power raises if it hits.','Can be used twice consecutively','rock','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Roost',0,0,'','Points equal to the voltage of the judge','flying','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sacred Fire',100,95,'May induce burn.','Points +3 if previous pokemon reaches max voltage of judge','fire','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Safeguard',0,0,'Prevents all status problems.','Pokemon after self cannot raise any voltage in that turn','normal','other',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sand Tomb',15,70,'Traps opponent.','First to appeal +1','ground','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sand-attack',0,100,'Lowers opponents ACCURACY one stage.','Pokemon after self cannot lower any voltage in that turn','ground','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sandstorm',0,0,'Causes a Sandstorm for 5 turns.','Pokemon after self cannot raise any voltage in that turn','rock','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Scary Face',0,90,'Lowers opponents SPEED two stages.','Appeals last in the next turn','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Scratch',40,100,'No effect.','No Added Effect','normal','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Screech',0,85,'Lowers opponents DEFENSE two stages.','Lowers voltage of all judges by 1','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Secret Power',70,100,'Depends on battle location.','Order of appealing is random in the next turn','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Seed Bomb',80,100,'No effect.','No Added Effect','grass','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Seed Flare',120,85,'','Points +3 if previous pokemon reaches max voltage of a judge','grass','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Seismic Toss',1,100,'Inflicts damage equal to the users level.','No Added Effect','fighting','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Selfdestruct',200,100,'User faints.','Points +15 if all pokemon appeal to the same judge','normal','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Shadow Ball',80,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','ghost','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Shadow Claw',70,100,'Has high critical hit ratio.','Points +2 if first to appeal','ghost','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Shadow Force',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','ghost','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Shadow Punch',60,0,'Cannot miss.','Points +2 if first to appeal','ghost','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Shadow Sneak',40,100,'Always strikes first.','Appeals first in the next turn','ghost','physical',30,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sharpen',0,0,'Raises users ATTACK one stage.','Points of next appeal doubles','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sheer Cold',1,30,'May cause one-hit KO.','Points +15 if all pokemon appeal to the same judge','ice','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Shock Wave',60,0,'Cannot miss.','Points +2 if first to appeal','electric','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Signal Beam',75,100,'May induce CONFUSION.','Raises judges voltage by 2','bug','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Silver Wind',60,100,'May raise all users stats one stage.','Raises judges voltage by 2','bug','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sing',0,55,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','normal','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sketch',0,0,'Copies the opponents last move forever.','Points +3 if lowest number of points in that turn','normal','other',1,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Skill Swap',0,0,'Use and target trade abilities.','Receives voltage points if previous pokemon reaches max voltage','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Skull Bash',100,100,'Raises users DEFENSE one stage and attacks next turn.','Points +3 if appeals to the same judge with other pokemon','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sky Attack',140,90,'May cause opponent to flinch.','Points +3 if appeals to the same judge with other pokemon','flying','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sky Uppercut',85,90,'Hits even if opponent is using FLY.','Points +2 if first to appeal','fighting','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Slack Off',0,0,'User recovers half the maximum HP.','Points equal to the voltage of the judge','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Slam',80,75,'No effect.','No Added Effect','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Slash',70,100,'Has high critical hit ratio.','No Added Effect','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sleep Powder',0,75,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','grass','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sleep Talk',0,0,'Uses an own random move while asleep.','No Added Effect','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sludge',65,100,'May induce poison.','Points +2 if last to appeal','poison','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sludge Bomb',90,100,'May induce poison.','Points +2 if last to appeal','poison','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Smellingsalt',60,100,'Stronger against a paralyzed opponent but also heals them.','Points equal 4 minus voltage of judge','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Smog',20,70,'May induce poison.','No Added Effect','poison','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Smokescreen',0,100,'Lowers opponents ACCURACY one stage.','Lowers voltage of all judges by 1','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Snatch',0,0,'Steals the effects of opponents next move.','Receives voltage points if previous pokemon reaches max voltage','dark','other',10,4);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Snore',40,100,'Can only be used while asleep.','No Added Effect','normal','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Softboiled',0,0,'User recovers half the maximum HP.','Points equal to the voltage of judge','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Solarbeam',120,100,'Wait for a turn and attacks the next.','Points +3 if appeals to the same judge with other pokemon','grass','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sonicboom',1,90,'Inflicts 20 HP damage.','No Added Effect','normal','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spacial Rend',100,95,'Has high critical hit ratio.','Increases judges voltage by 2','dragon','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spark',65,100,'May induce paralysis.','No Added Effect','electric','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spider Web',0,0,'Prevents the opponent from escaping.','Pokemon after self cannot raise any voltage in that turn','bug','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spike Cannon',20,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spikes',0,0,'The damage that is given through Spikes is determined by the amount of layers that you place.','','ground','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spit Up',1,100,'This move has four tiers of damage; 3 are stockpiled, 1 isnt.','','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spite',0,100,'Opponents last move loses 2-5 HP.','Pokemon after self cannot lower any voltage in that turn','ghost','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Splash',0,0,'No effect.','Points equal 4 minus voltage of judge','normal','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Spore',0,100,'Induces sleep.','Lowers voltage of all judges by 1','grass','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Stealth Rock',0,0,'Stealth Rocks damaging methods are rather unique.','','rock','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Steel Wing',70,90,'May raise users DEFENSE one stage.','No Added Effect','steel','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Stockpile',0,0,'User stockpiles power for up to 3 turns.','Points of next appeal doubles','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Stomp',65,100,'May cause opponent to flinch.','No Added Effect','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Stone Edge',100,80,'Has high critical hit ratio.','Increases judges voltage by 2','rock','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Strength',80,100,'No effect.','No Added Effect','normal','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('String Shot',0,95,'Lowers opponents SPEED one stage.','Pokemon after self cannot lower any voltage in that turn','bug','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Struggle',50,0,'','No Effect','normal','physical',1,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Stun Spore',0,75,'Induces paralysis','Pokemon after self cannot lower any voltage in that turn','grass','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Submission',80,80,'User takes recoil damage.','No Added Effect','fighting','physical',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Substitute',0,0,'Creates a decoy using 1/4 of the users maximum HP.','Points +3 if lowest number of points in that turn','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sucker Punch',80,100,'','Appeals first in the next turn','dark','physical',5,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sunny Day',0,0,'Causes Sunshine for 5 rounds.','Pokemon after self cannot raise any voltage in that turn','fire','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Super Fang',1,90,'Cuts half opponents HP.','No Added Effect','normal','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Superpower',120,100,'Lowers users ATTACK and DEFENSE one stage.','Points +2 if last to appeal','fighting','physical',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Supersonic',0,55,'May induce CONFUSION.','Pokemon after self cannot lower any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Surf',95,100,'','Points +2 if first to appeal','water','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Swagger',0,90,'Induces CONFUSE. Raises opponents ATTACK two stages.','Pokemon after self cannot lower any voltage in that turn','normal','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Swallow',0,0,'This move has four tiers of healing; 3 are stockpiled, 1 isnt.','','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sweet Kiss',0,75,'May induce CONFUSION.','Pokemon after self cannot lower any voltage in that turn','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Sweet Scent',0,100,'Lowers opponents EVASIVENESS one stage.','Pokemon after self cannot lower any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Swift',60,0,'Cannot miss.','Points +2 if first to appeal','normal','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Switcheroo',0,100,'User trades items with opponent.','Receives voltage points if previous pokemon reaches max voltage','dark','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Swords Dance',0,0,'Raises users ATTACK two stages.','Points of next appeal doubles','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Synthesis',0,0,'User restores HP.','number of points is equal to the voltage of the judge','grass','other',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Tackle',35,95,'No effect.','No Added Effect','normal','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Tail Glow',0,0,'Raises users SP. ATK two stages.','Points of next appeal doubles','bug','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Tail Whip',0,100,'Lowers opponents DEFENSE one stage.','Pokemon after self cannot lower any voltage in that turn','normal','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Tailwind',0,0,'','Appeals first in the next turn','flying','other',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Take Down',90,85,'User takes recoil damage.','No Added Effect','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Taunt',0,100,'Opponent can only use attack moves.','Points equal 4 minus voltage of judge','dark','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Teeter Dance',0,100,'Confuses all Pokémon on the field.','Order of appealing is random in the next turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Teleport',0,0,'Ends battle. Switches user in trainer battles.','Appeals first in the next turn','psychic','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thief',40,100,'May steal opponents item (temporarily in trainer battles).','Receives voltage points if previous pokemon reaches max voltage','dark','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thrash',90,100,'User uses the same attack for 2-3 turns then becomes confused.','Can be used twice consecutively','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thunder',120,70,'May induce paralysis.','Points +2 if first to appeal','electric','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thunder Fang',65,95,'','No Added Effect','electric','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thunder Wave',0,100,'Induces paralysis','Pokemon after self cannot lower any voltage in that turn','electric','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thunderbolt',95,100,'May induce paralysis.','Points +2 if first to appeal','electric','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thunderpunch',75,100,'May induce paralysis.','Points +2 if first to appeal','electric','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Thundershock',40,100,'May induce paralysis.','No Added Effect','electric','special',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Tickle',0,100,'Lowers opponents ATTACK and DEFENSE one stage.','Pokemon after self cannot lower any voltage in that turn','normal','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Torment',0,100,'Opponent cannot use the same move in a row.','Points equal 4 minus voltage of judge','dark','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Toxic',0,85,'Induces severe poison.','Pokemon after self cannot lower any voltage in that turn','poison','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Toxic Spikes',0,0,'Toxic Spikes is the only Entry Hazard attack that does not afflict damage on the Pokémon straight away.','','poison','other',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Transform',0,0,'Transform can change many features of the Pokémon temporarily.','','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Tri Attack',80,100,'May induce burn, freeze or paralysis.','No Added Effect','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Trick',0,100,'User trades items with opponent.','Receives voltage points if previous pokemon reaches max voltage','psychic','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Trick Room',0,0,'','Order of appealing is random in the next turn','psychic','other',5,-7);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Triple Kick',10,90,'Attacks 1-3 times in a row.','Can be used twice consecutively','fighting','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Trump Card',1,0,'Trump Cards base power is dependant on the amount of PP that it has left.','','normal','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Twineedle',25,100,'Attacks twice. May induce poison.','Can be used twice consecutively','bug','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Twister',40,100,'May cause opponent to flinch. Damage is doubled if opponent is using FLY.','No Added Effect','dragon','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('U-turn',70,100,'','Points equal 4 minus voltage of judge','bug','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Uproar',50,100,'User cannot sleep for 2-5 turns.','Lowers voltage of all judges by 1','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Vacuum Wave',40,100,'Always strikes first.','Appeals first in the next turn','fighting','special',30,1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Vicegrip',55,100,'No effect.','No Added Effect','normal','physical',30,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Vine Whip',35,100,'No effect.','No Added Effect','grass','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Vital Throw',70,0,'Cannot miss. Goes last.','Appeals last in the next turn','fighting','physical',10,-1);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Volt Tackle',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','electric','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Wake-up Slap',60,100,'','Points equal 4 minus voltage of judge','fighting','physical',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Water Gun',40,100,'No effect.','No Added Effect','water','special',25,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Water Pulse',60,100,'May induce CONFUSION.','Points +2 if first to appeal','water','special',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Water Sport',0,0,'Lowers the power of FIRE moves.','Pokemon after self cannot raise any voltage in that turn','water','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Water Spout',150,100,'Power wise, this attack has a Base Power of 150 but that completely changes all depending on the HP.','','water','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Waterfall',80,100,'May cause opponent to flinch.','No Added Effect','water','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Weather Ball',50,100,'Depends on the weather.','Increases judges voltage by 2','normal','special',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Whirlpool',15,70,'','First to appeal +1','water','special',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Whirlwind',0,100,'Ends battle. Switches the opponent Pokémon in a trainer battle.','Points +15 if all pokemon appeal to the same judge','normal','other',20,-6);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Will-o-wisp',0,75,'Induces burn.','Points +2 if first to appeal','fire','other',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Wing Attack',60,100,'No effect.','No Added Effect','flying','physical',35,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Wish',0,0,'Recovers HP. Delays 1 turn.','Points equal to the voltage of judge','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Withdraw',0,0,'Raises users DEFENSE one stage.','Pokemon after self cannot raise any voltage in that turn','water','other',40,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Wood Hammer',120,100,'User takes recoil damage.','Points +2 if last to appeal','grass','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Worry Seed',0,100,'','Pokemon after self cannot lower any voltage in that turn','grass','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Wrap',15,85,'Traps opponent.','First to appeal +1','normal','physical',20,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Wring Out',1,100,'This attack\s Base Power is anything from 1 up to 110 making it a fairly powerful attack to be used.','','normal','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('X-scissor',80,100,'No effect.','Points +2 if first to appeal','bug','physical',15,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Yawn',0,0,'User and opponent sleep the next turn.','Pokemon after self cannot lower any voltage in that turn','normal','other',10,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Zap Cannon',120,50,'May induce paralysis.','Increases judges voltage by 2','electric','special',5,0);
-INSERT INTO move (moveName,basePower,accuracy,description,effect,battleType,category,powerPoints,speedPrio) VALUES ('Zen Headbutt',80,90,'May cause opponent to flinch.','Points +2 if last to appeal','psychic','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Absorb',20,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','special',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Acid',40,100,'May lower opponents SP. DEF one stage.','No Added Effect','special',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Acid Armor',0,0,'Raises users DEFENSE two stages.','Points of next appeal doubles','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Acupressure',0,0,'','Points of next appeal doubles','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aerial Ace',60,0,'Cannot miss.','Points +2 if first to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aeroblast',100,95,'Has high critical hit ratio.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Agility',0,0,'Raises users SPEED two stages.','Appeals first in the next turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Air Cutter',55,95,'Has high critical hit ratio.','No Added Effect','special',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Air Slash',75,95,'May cause opponent to flinch.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Amnesia',0,0,'Raises users SP. DEF two stages.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ancientpower',60,100,'May raise all users stats one stage.','Points +2 if last to appeal','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aqua Jet',40,100,'Always strikes first.','Appeals first in the next turn','physical',20,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aqua Ring',0,0,'','Points equal to the voltage of the judge','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aqua Tail',90,90,'No effect.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Arm Thrust',15,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aromatherapy',0,0,'Heals partys status problems.','Points equal to the voltage of the judge','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Assist',0,0,'Uses a random move from another Pokémon in the team.','Order of appealing is random in the next turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Assurance',50,100,'','Points doubles if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Astonish',30,100,'May cause opponent to flinch.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Attack Order',90,100,'Has high critical hit ratio.','Increases judges voltage by 2','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Attract',0,100,'Induces ATTRACT.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aura Sphere',90,0,'Cannot miss.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Aurora Beam',65,100,'May lower opponents ATTACK one stage.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Avalanche',60,100,'Power doubles if hit before the attack.','Points doubles if last to appeal','physical',10,-4);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Barrage',15,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Barrier',0,0,'Raises users DEFENSE two stages.','Pokemon after self cannot raise any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Baton Pass',0,0,'Switches out the user but status changes remain.','Points equal 4 minus voltage of judge','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Beat Up',10,100,'Does additional damage for every Pokémon in trainers team.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Belly Drum',0,0,'Cuts half of users maximum HP and maximizes ATTACK.','Points of next appeal doubles','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bide',1,0,'User takes hits for 2 rounds, then strikes back.','Points doubles if last to appeal','physical',10,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bind',15,75,'Traps opponent.','First to appeal +1','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bite',60,100,'May cause opponent to flinch.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Blast Burn',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Blaze Kick',85,90,'Has high critical hit ratio. May induce burn.','Points +2 if first to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Blizzard',120,70,'','Points +2 if first to appeal','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Block',0,0,'Prevents the opponent from escaping.','Pokemon after self cannot raise any voltage in that turn','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Body Slam',85,100,'May induce paralysis.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bone Club',65,85,'May cause opponent to flinch.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bone Rush',25,80,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bonemerang',50,90,'Attacks twice in a row.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bounce',85,85,'','Points +3 if appeals to the same judge with other pokemon','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Brave Bird',120,100,'User takes recoil damage.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Brick Break',75,100,'Destroys protective barriers.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Brine',65,100,'','Increases judges voltage by 2','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bubble',20,100,'May lower opponents SPEED one stage.','Appeals last in the next turn','special',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bubblebeam',65,100,'May lower opponents SPEED one stage.','Appeals last in the next turn','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bug Bite',60,100,'','Receives voltage points if previous pokemon reaches max voltage','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bug Buzz',90,100,'May lower opponents SP. DEF one stage.','Increases judges voltage by 2','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bulk Up',0,0,'Raises users ATTACK and DEFENSE one stage.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bullet Punch',40,100,'Always strikes first.','Appeals first in the next turn','physical',30,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Bullet Seed',10,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Calm Mind',0,0,'Raises users SP. ATK and SP. DEF one stage.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Camouflage',0,0,'User changes type depending on the location.','Pokemon after self cannot raise any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Captivate',0,100,'','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Charge',0,0,'Increases the power of the next ELECTRIC attack.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Charge Beam',50,90,'','Points +2 if firt to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Charm',0,100,'Lowers opponents ATTACK two stages.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Chatter',60,100,'','Points +3 if lowest number of points in that turn','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Clamp',35,75,'Traps opponent.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Close Combat',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Comet Punch',18,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Confuse Ray',0,100,'May induce CONFUSION.','Lowers voltage of all judges by 1','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Confusion',50,100,'May induce CONFUSION.','No Added Effect','special',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Constrict',10,100,'May lower opponents SPEED one stage.','First to appeal +1','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Conversion',0,0,'User changes type into an own moves type.','Points +3 if lowest number of points in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Conversion 2',0,0,'User becomes a type resistant to opponents last attack.','Points +3 if lowest number of points in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Copycat',0,0,'','Receives voltage points if previous pokemon reaches max voltage','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Cosmic Power',0,0,'Raises users DEFENSE and SP. DEF one stage.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Cotton Spore',0,85,'Lowers opponents SPEED two stages.','Appeals first in the next turn','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Counter',1,100,'If hit by a physical attack, deals double the damage received.','Points doubles if last to appeal','physical',20,-5);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Covet',40,100,'May steal opponents item (temporarily in trainer battles).','Receives voltage points if previous pokemon reaches max voltage','physical',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Crabhammer',90,85,'Has high critical hit ratio.','Points +2 if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Cross Chop',100,80,'Has high critical hit ratio.','Points +2 if last to appeal','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Cross Poison',70,100,'Has high critical hit ratio. May induce poison.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Crunch',80,100,'May lower opponents DEFENSE one stage.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Crush Claw',75,95,'May lower opponents DEFENSE one stage.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Crush Grip',1,100,'This attack\s Base Power is anything from 1 up to 110 making it a fairly powerful attack to be used.','','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Curse',0,0,'Ghost type Pokémon: User loses half their maximum HP, and the opponent gets a Nightmare.','First to appeal +1','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Cut',50,95,'No effect.','No Added Effect','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dark Pulse',80,100,'May cause opponent to flinch.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dark Void',0,80,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Defense Curl',0,0,'Raises users DEFENSE one stage. Damage from ROLLOUT will be higher.','Pokemon after self cannot raise any voltage in that turn','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Defend Order',0,0,'Raises users DEFENSE and SP. DEF one stage.','Points of next appeal doubles','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Defog',0,0,'','Pokemon after self cannot raise any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Destiny Bond',0,0,'If the user faints, the opponent will also faint.','Points +15 if all pokemon appeal to the same judge','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Detect',0,0,'Evades opponents next attack; the moves accuracy drops.','Points equal 4 minus voltage of judge','other',5,3);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dig',80,100,'','Points +3 if appeals to the same judge with other pokemon','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Disable',0,80,'Disables opponents last move.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Discharge',80,100,'May induce paralysis.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dive',80,100,'','Points +3 if appeals to the same judge with other pokemon','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dizzy Punch',70,100,'May induce CONFUSION.','Points equal 4 minus voltage of judge','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Doom Desire',120,85,'Damage delays 2 turns.','Points +2 if first to appeal','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Double Hit',35,90,'Attacks twice in a row.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Double Kick',30,100,'Attacks twice in a row.','Can be used twice consecutively','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Double Team',0,0,'Raises users EVASIVENESS one stage.','Appeals first in the next turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Double-edge',120,100,'User takes recoil damage.','Points +15 if all pokemon appeal to the same judge','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Doubleslap',15,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Draco Meteor',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dragon Claw',80,100,'No effect.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dragon Dance',0,0,'Raises users ATTACK and SPEED one stage.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dragon Pulse',90,100,'No effect.','Increases judges voltage by 2','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dragon Rage',1,100,'Inflicts 40 HP damage.','No Added Effect','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dragon Rush',100,75,'May cause opponent to flinch.','Points +2 if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dragonbreath',60,100,'May induce paralysis.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Drain Punch',60,100,'User recovers half the damage inflicted.','No Added Effect','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dream Eater',100,100,'User recovers half the damage inflicted on a sleeping opponent.','Points +3 if two pokemon raise a judges voltage consecutively','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Drill Peck',80,100,'No effect.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Dynamicpunch',100,50,'May induce CONFUSION.','Points +2 if last to appeal','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Earth Power',90,100,'May lower opponents SP. DEF one stage.','Points +2 if last to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Earthquake',100,100,'Hits everyone on the field.','Points +2 if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Egg Bomb',100,75,'No effect.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Embargo',0,100,'','Pokemon after self cannot raise any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ember',40,100,'May induce burn.','No Added Effect','special',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Encore',0,100,'Opponent repears the last move.','Points +3 if two pokemon raise a judges voltage consecutively','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Endeavor',1,100,'Power rises if users HP are less than opponents HP.','Points doubles if last to appeal','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Endure',0,0,'Survives any attack for one turn leaving at least 1 HP but moves accuracy drops.','Pokemon after self cannot raise any voltage in that turn','other',10,3);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Energy Ball',80,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Eruption',150,100,'Power wise, this attack has a Base Power of 150 but that completely changes all depending on the HP','','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Explosion',250,100,'User faints.','Points +15 if all pokemon appeal to the same judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Extrasensory',80,100,'May cause opponent to flinch.','Points +2 if first to appeal','special',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Extremespeed',80,100,'Always strikes first.','Appeals first in the next turn','physical',5,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Facade',70,100,'ATTACK is doubled when burned, paralyzed, or poisoned.','Points doubles if last to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Faint Attack',60,0,'Cannot miss.','Points +2 if last to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fake Out',40,100,'Causes opponent to flinch. Attacks first.','Points +2 if first to appeal','physical',10,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fake Tears',0,100,'Lowers opponents SP. DEF two stages.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('False Swipe',40,100,'Leaves the foe with at least 1 HP.','Points equal 4 minus voltage of judge','physical',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Featherdance',0,100,'Lowers opponents ATTACK two stages.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Feint',50,100,'','Points equal 4 minus voltage of judge','physical',10,2);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fire Blast',120,85,'May induce burn.','Points +2 if first to appeal','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fire Fang',65,95,'','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fire Punch',75,100,'May induce burn.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fire Spin',15,70,'Traps opponent.','First to appeal +1','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fissure',1,30,'May cause one-hit KO.','Oints +15 if all pokemon appeal to the same judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flail',1,100,'Inflicts more damage when the users HP is down.','Points doubles if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flame Wheel',60,100,'May induce burn.','Can be used twice consecutively','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flamethrower',95,100,'May induce burn.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flare Blitz',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flash',0,100,'Lowers opponents ACCURACY one stage.','Lowers voltage of all judges by 1','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flash Cannon',80,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Flatter',0,100,'Induces CONFUSE. Raises opponents SP. ATK two stages.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fling',1,100,'As the Base Power can get up to 130, it adds major strategy possibilities.','Induces Burn status to holder','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fly',90,95,'The user is protected the first turn, attacks the second turn.','Points +3 if appeals to the same judge with other pokemon','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Focus Blast',120,70,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Focus Energy',0,0,'Increases users critical hit rate.','Points of next appeal doubles','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Focus Punch',150,100,'User flinches if hit before attacking.','Points +3 if appeals to the same judge with other pokemon','physical',20,-3);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Follow Me',0,0,'Opponent only attacks the user. Best used in 2VS2 battles.','Order of appealing is random in the next turn','other',20,3);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Force Palm',60,100,'May induce paralysis.','Points +2 if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Foresight',0,0,'Resets opponents EVASIVENESS.','Points +3 if two pokemon raise a judges voltage consecutively','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Frenzy Plant',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Frustration',1,100,'Frustration is the move that utilises the Happiness in the negative light, by rewarding the amount the Pokémon hates the trainer.','','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fury Attack',15,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fury Cutter',10,95,'Moves power raises if it hits.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Fury Swipes',18,80,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Future Sight',80,90,'Damage delays 2 turns.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Gastro Acid',0,100,'','Pokemon after self cannot raise any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Giga Drain',60,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Giga Impact',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Glare',0,75,'Induces paralysis','Pokemon after self cannot lower any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Grass Knot',1,100,'This attacks power is based on your targets weight.','','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Grasswhistle',0,55,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Gravity',0,0,'','Pokemon after self cannot raise any voltage in that turn','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Growl',0,100,'Lowers opponents ATTACK one stage.','Pokemon after self cannot lower any voltage in that turn','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Growth',0,0,'Raises users SP. ATK one stage.','Points of next appeal doubles','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Grudge',0,0,'If the user faints, deletes the PP of opponents last move.','Lowers voltage of all judges by 1','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Guard Swap',0,0,'','Points equal 4 minus voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Guillotine',1,30,'May cause one-hit KO.','Points +15 if all pokemon appeal to the same judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Gunk Shot',120,70,'May induce poison.','No Added Effect','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Gust',40,100,'Hits even if opponent is using FLY.','No Added Effect','special',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Gyro Ball',1,100,'This attacks Base Power is anything from 1 up to 150 making it a very powerful attack to be used.','','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hail',0,0,'Causes Hailstorm for 5 rounds.','Pokemon after self cannot raise any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hammer Arm',100,90,'','Appeals last in the next turn','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Harden',0,0,'Raises users DEFENSE one stage.','Pokemon after self cannot raise any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Haze',0,0,'Resets all ability stages.','Pokemon after self cannot raise any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Head Smash',150,80,'','Points +3 if previous pokemon reaches max voltage of a judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Headbutt',70,100,'May cause opponent to flinch.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Heal Bell',0,0,'Heals partys status problems.','Points equal to the voltage of the judge','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Heal Block',0,100,'','Pokemon after self cannot raise any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Heal Order',0,0,'User recovers half the maximum HP.','Points equal to the voltage of the judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Healing Wish',0,0,'','Points equal to the voltage of the judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Heart Swap',0,0,'','Points equal 4 minus voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Heat Wave',100,90,'May induce burn.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Helping Hand',0,0,'Boosts receivers attacks. Best used in 2VS2 battles.','Points +3 if two pokemon raise a judges voltage consecutively','other',20,5);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hi Jump Kick',100,90,'If attack misses, user takes 1/8 HP of damage.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hidden Power',1,100,'Power and type depend on users IVs.','Points +3 if lowest number of points in that turn','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Horn Attack',65,100,'No effect.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Horn Drill',1,30,'May cause one-hit KO.','Points +15 if all pokemon appeal to the same judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Howl',0,0,'Raises users ATTACK one stage.','Points of next appeal doubles','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hydro Cannon',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hydro Pump',120,80,'No effect.','Points +2 if first to appeal','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hyper Beam',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hyper Fang',80,90,'May cause opponent to flinch.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hyper Voice',90,100,'No effect.','No Added Effect','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Hypnosis',0,70,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ice Ball',30,90,'Uses the same move for 5 turns; moves power raises if it hits.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ice Beam',95,100,'May induce freeze.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ice Fang',65,95,'','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ice Punch',75,100,'May induce freeze.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ice Shard',40,100,'Always strikes first.','Appeals first in the next turn','physical',30,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Icicle Spear',10,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Icy Wind',55,95,'May lower opponents SPEED one stage.','Appeals last in the next turn','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Imprison',0,0,'Opponent cannot use move that user knows.','Points +3 if two pokemon raise a judges voltage consecutively','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ingrain',0,0,'Recovers HP every turn. User cannot switch.','First to appeal +1','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Iron Defense',0,0,'Raises users DEFENSE two stages.','Pokemon after self cannot raise any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Iron Head',80,100,'May cause opponent to flinch.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Iron Tail',100,75,'May lower opponents DEFENSE one stage.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Judgment',100,100,'','Order of appealing is random in the next turn','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Jump Kick',85,95,'If attack misses, user takes 1/8 HP of damage.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Karate Chop',50,100,'Has high critical hit ratio.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Kinesis',0,80,'Lowers opponents ACCURACY one stage.','Points of next appeal doubles','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Knock Off',20,100,'Knocks down opponents held item to prevent its use.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Last Resort',130,100,'','First to appeal +1','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Lava Plume',80,100,'May induce burn.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Leaf Blade',90,100,'Has high critical hit ratio.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Leaf Storm',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Leech Life',20,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Leech Seed',0,90,'User steals HP from the opponent every turn.','First to appeal +1','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Leer',0,100,'Lowers opponents DEFENSE one stage.','Pokemon after self cannot lower any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Lick',20,100,'May induce paralysis.','Points equal 4 minus voltage of judge','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Light Screen',0,0,'Halves SP. ATK damage inflicted on user.','Pokemon after self cannot raise any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Lock-on',0,0,'Ensures that users next move will not fail.','Points +3 if two pokemon raise a judges voltage consecutively','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Lovely Kiss',0,75,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Low Kick',1,100,'This attacks power is based on your targets weight.','','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Lucky Chant',0,0,'','Pokemon after self cannot raise any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Lunar Dance',0,0,'','Points equal to the voltage of the judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Luster Purge',70,100,'May lower opponents SP. DEF one stage.','Points +3 if previous pokemon reaches a max voltage in a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mach Punch',40,100,'Always strikes first.','Appeals first in the next turn','physical',30,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Magic Coat',0,0,'Magic Coat will reflect the moves used by the opponent on the Pokémon during the next turn back at them.','If it is the opposite gender of the user, the foe becomes infatuated and less likely to attack.','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Magical Leaf',60,0,'Cannot miss.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Magma Storm',120,70,'Traps opponent.','Can be used twice consecutively','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Magnet Bomb',60,0,'Cannot miss.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Magnet Rise',0,0,'','Pokemon after self cannot raise any voltage in that turnt','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Magnitude',1,100,'When the attack is used, the screen will come up with a number saying the Magnitude of the attack.','','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Me First',0,0,'','Appeals first in the next turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mean Look',0,0,'Prevents the opponent from escaping.','Lowers voltage of all judges by 1','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Meditate',0,0,'Raises users ATTACK one stage.','Points of next appeal doubles','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mega Drain',40,100,'User recovers half the damage inflicted.','Points +3 if two pokemon raise a judges voltage consecutively','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mega Kick',120,75,'No effect.','Points +2 if last to appeal','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mega Punch',80,85,'No effect.','Points +2 if last to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Megahorn',120,85,'No effect.','Points +2 if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Memento',0,100,'Lowers opponents stats. User faints.','Points +15 if all pokemon appeal to the same judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Metal Burst',1,100,'','Points doubles if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Metal Claw',50,95,'May raise users ATTACK one stage.','Points +2 if last to appeal','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Metal Sound',0,85,'Lowers opponents SP. DEF two stages.','Lowers voltage of all judges by 1','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Meteor Mash',100,85,'May raise users ATTACK one stage.','Points +2 if last to appeal','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Metronome',0,0,'Uses a random move.','Order of appealing is random in the next turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Milk Drink',0,0,'User recovers half the maximum HP.','Points equal to the voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mimic',0,0,'Copies opponents last move.','Receives voltage points if previous pokemon reaches max voltage','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mind Reader',0,0,'Ensures that users next move will not fail.','Points +3 if two pokemon raise a judges voltage consecutively','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Minimize',0,0,'Raises users EVASIVENESS one stage.','Pokemon after self cannot raise any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Miracle Eye',0,0,'','Points +3 if two pokemon raise a judges voltage consecutively','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mirror Coat',1,100,'Counters the foes special attack at double the power.','Points doubles if last to appeal','special',20,-5);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mirror Move',0,0,'User does the last move used by opponent.','Points doubles if last to appeal','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mirror Shot',65,85,'May lower opponents ACCURACY one stage.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mist',0,0,'Stops ability reduction.','Pokemon after self cannot raise any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mist Ball',70,100,'May lower opponents SP. ATK one stage.','Points +3 if previous pokemon reaches a max voltage in a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Moonlight',0,0,'User restores HP.','number of points is equal to the voltage of the judge','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Morning Sun',0,0,'User restores HP.','number of points is equal to the voltage of the judge','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mud Bomb',65,85,'May lower opponents ACCURACY one stage.','Points +2 if last to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mud Shot',55,95,'May lower opponents SPEED one stage.','Appeals last in the next turn','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mud Sport',0,0,'Lowers the power of ELECTRIC moves.','Pokemon after self cannot raise any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Mud-slap',20,100,'May lower opponents ACCURACY one stage.','No Added Effect','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Muddy Water',95,85,'May lower opponents ACCURACY one stage.','Points +2 if last to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Nasty Plot',0,0,'Raises users SP. ATK two stages.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Natural Gift',1,100,'','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Nature Power',0,0,'Depends on battle location.','Order of appealing is random in the next turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Needle Arm',60,100,'May cause opponent to flinch.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Night Shade',1,100,'Inflicts damage equal to the users level.','No Added Effect','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Night Slash',70,100,'Has high critical hit ratio.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Nightmare',0,100,'Inflicts 1/4 damage on a sleeping foe every turn.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Octazooka',65,85,'May lower opponents ACCURACY one stage.','Raises judges voltage by 2','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Odor Sleuth',0,0,'Resets opponents EVASIVENESS.','Points +3 if two pokemon raise a judges voltage consecutively','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Ominous Wind',60,100,'May raise all users stats one stage.','Points of next appeal doubles','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Outrage',120,100,'User uses the same attack for 2-3 turns then becomes confused.','Can be used twice consecutively','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Overheat',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches a max voltage in a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Pain Split',0,0,'User and opponent share HP.','Lowers voltage of all judges by 1','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Pay Day',40,100,'User gains coins after battle.','Points +3 if lowest number of points in that turn','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Payback',50,100,'','Points +3 if appeals to the same judge with other pokemon','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Peck',35,100,'No effect.','No Added Effect','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Perish Song',0,0,'All Pokémon on the field faint in 3 turns.','Lowers voltage of all judges by 1','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Petal Dance',90,100,'User uses the same attack for 2-3 turns then becomes confused.','First to appeal +1','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Pin Missile',14,85,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Pluck',60,100,'','Receives voltage points if previous pokemon reaches max voltage','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Poison Fang',50,100,'May induce severe poison.','Increases judges voltage by 2','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Poison Gas',0,55,'Induces poison.','No Added Effect','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Poison Jab',80,100,'May induce poison.','Increases judges voltage by 2','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Poison Sting',15,100,'May induce poison.','Pokemon after self cannot lower any voltage in that turn','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Poison Tail',50,100,'Has high critical hit ratio. May induce poison.','Increases judges voltage by 2','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Poisonpowder',0,75,'Induces poison.','Pokemon after self cannot lower any voltage in that turn','other',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Pound',40,100,'No effect.','No Added Effect','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Powder Snow',40,100,'May induce freeze.','No Added Effect','special',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Power Gem',70,100,'No effect.','No Added Effect','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Power Swap',0,0,'','Points equal 4 minus voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Power Trick',0,0,'','Points equal 4 minus voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Power Whip',120,85,'No effect.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Present',1,90,'May hit or heal the user or the opponent.','Points equal 4 minus voltage of judge','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Protect',0,0,'Evades opponents next attack; the moves accuracy drops.','Points equal 4 minus voltage of judge','other',10,3);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psybeam',65,100,'May induce CONFUSION.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psych Up',0,0,'Copies opponents stat changes.','Points of next appeal doubles','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psychic',90,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psycho Boost',140,90,'Lowers users SP. ATK two stages.','Points +3 if previous pokemon reaches a max voltage in a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psycho Cut',70,100,'Has high critical hit ratio.','Points +2 if first to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psycho Shift',0,90,'','Points equal 4 minus voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Psywave',1,80,'Inflicts damage equal to 0.5 to 1.5 x  users level.','No Added Effect','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Punishment',1,100,'Punishment has a rather low Base Power to start of with.','','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Pursuit',40,100,'Inflicts double damage if the opponent is switching out.','Points +3 if two pokemon raise a judges voltage consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Quick Attack',40,100,'Always strikes first.','Appeals first in the next turn','physical',30,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rage',20,100,'Users ATTACK raises if hit.','Points of next appeal doubles','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rain Dance',0,0,'Causes Rain for 5 rounds.','Pokemon after self cannot raise any voltage in that turn','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rapid Spin',20,100,'User is becomes free from moves like Wrap, Bind and Leech Seed.','Points +2 if first to appeal','physical',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Razor Leaf',55,95,'Has high critical hit ratio.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Razor Wind',80,100,'Has high critical hit ratio.','Points +3 if appeals to the same judge with other pokemon','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Recover',0,0,'User recovers half the maximum HP.','Points equal to the voltage of the judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Recycle',0,0,'Recycles an already used held item.','Receives voltage points if previous pokemon reaches max voltage','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Reflect',0,0,'Halves ATTACK damage inflicted on user.','Pokemon after self cannot raise any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Refresh',0,0,'Heals poisoning, paralysis, or a burn.','Points equal to the voltage of judge','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rest',0,0,'User restores health, then sleeps.','Points equal to the voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Return',1,100,'Return is the move that utilises the Happiness in a more positive light, by rewarding the amount the Pokémon likes the trainer.','','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Revenge',60,100,'Power doubles if hit before the attack.','Points doubles if last to appeal','physical',10,-4);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Reversal',1,100,'Inflicts more damage when the users HP is down.','Points doubles if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Roar',0,100,'Ends battle. Switches the opponent Pokémon in a trainer battle.','Pokemon after self cannot lower any voltage in that turn','other',20,-6);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Roar Of Time',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Blast',25,80,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Climb',90,85,'May induce CONFUSION.','Points +2 if last to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Polish',0,0,'Raises users SPEED two stages.','Appeals first in the next turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Slide',75,90,'May cause opponent to flinch.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Smash',40,100,'May lower opponents DEFENSE one stage.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Throw',50,90,'No effect.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Tomb',50,80,'May lower opponents SPEED one stage.','Appeals last in the next turn','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rock Wrecker',150,90,'User cannot attack on the next turn.','Points +3 if previous pokemon reaches max voltage of a judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Role Play',0,0,'Copies targets ability.','Points +3 if lowest number of points in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rolling Kick',60,85,'May cause opponent to flinch.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Rollout',30,90,'Uses the same move for 5 turns; moves power raises if it hits.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Roost',0,0,'','Points equal to the voltage of the judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sacred Fire',100,95,'May induce burn.','Points +3 if previous pokemon reaches max voltage of judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Safeguard',0,0,'Prevents all status problems.','Pokemon after self cannot raise any voltage in that turn','other',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sand Tomb',15,70,'Traps opponent.','First to appeal +1','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sand-attack',0,100,'Lowers opponents ACCURACY one stage.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sandstorm',0,0,'Causes a Sandstorm for 5 turns.','Pokemon after self cannot raise any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Scary Face',0,90,'Lowers opponents SPEED two stages.','Appeals last in the next turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Scratch',40,100,'No effect.','No Added Effect','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Screech',0,85,'Lowers opponents DEFENSE two stages.','Lowers voltage of all judges by 1','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Secret Power',70,100,'Depends on battle location.','Order of appealing is random in the next turn','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Seed Bomb',80,100,'No effect.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Seed Flare',120,85,'','Points +3 if previous pokemon reaches max voltage of a judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Seismic Toss',1,100,'Inflicts damage equal to the users level.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Selfdestruct',200,100,'User faints.','Points +15 if all pokemon appeal to the same judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Shadow Ball',80,100,'May lower opponents SP. DEF one stage.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Shadow Claw',70,100,'Has high critical hit ratio.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Shadow Force',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Shadow Punch',60,0,'Cannot miss.','Points +2 if first to appeal','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Shadow Sneak',40,100,'Always strikes first.','Appeals first in the next turn','physical',30,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sharpen',0,0,'Raises users ATTACK one stage.','Points of next appeal doubles','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sheer Cold',1,30,'May cause one-hit KO.','Points +15 if all pokemon appeal to the same judge','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Shock Wave',60,0,'Cannot miss.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Signal Beam',75,100,'May induce CONFUSION.','Raises judges voltage by 2','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Silver Wind',60,100,'May raise all users stats one stage.','Raises judges voltage by 2','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sing',0,55,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sketch',0,0,'Copies the opponents last move forever.','Points +3 if lowest number of points in that turn','other',1,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Skill Swap',0,0,'Use and target trade abilities.','Receives voltage points if previous pokemon reaches max voltage','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Skull Bash',100,100,'Raises users DEFENSE one stage and attacks next turn.','Points +3 if appeals to the same judge with other pokemon','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sky Attack',140,90,'May cause opponent to flinch.','Points +3 if appeals to the same judge with other pokemon','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sky Uppercut',85,90,'Hits even if opponent is using FLY.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Slack Off',0,0,'User recovers half the maximum HP.','Points equal to the voltage of the judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Slam',80,75,'No effect.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Slash',70,100,'Has high critical hit ratio.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sleep Powder',0,75,'Induces sleep.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sleep Talk',0,0,'Uses an own random move while asleep.','No Added Effect','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sludge',65,100,'May induce poison.','Points +2 if last to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sludge Bomb',90,100,'May induce poison.','Points +2 if last to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Smellingsalt',60,100,'Stronger against a paralyzed opponent but also heals them.','Points equal 4 minus voltage of judge','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Smog',20,70,'May induce poison.','No Added Effect','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Smokescreen',0,100,'Lowers opponents ACCURACY one stage.','Lowers voltage of all judges by 1','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Snatch',0,0,'Steals the effects of opponents next move.','Receives voltage points if previous pokemon reaches max voltage','other',10,4);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Snore',40,100,'Can only be used while asleep.','No Added Effect','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Softboiled',0,0,'User recovers half the maximum HP.','Points equal to the voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Solarbeam',120,100,'Wait for a turn and attacks the next.','Points +3 if appeals to the same judge with other pokemon','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sonicboom',1,90,'Inflicts 20 HP damage.','No Added Effect','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spacial Rend',100,95,'Has high critical hit ratio.','Increases judges voltage by 2','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spark',65,100,'May induce paralysis.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spider Web',0,0,'Prevents the opponent from escaping.','Pokemon after self cannot raise any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spike Cannon',20,100,'Attacks 2-5 times in a row.','Can be used twice consecutively','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spikes',0,0,'The damage that is given through Spikes is determined by the amount of layers that you place.','','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spit Up',1,100,'This move has four tiers of damage; 3 are stockpiled, 1 isnt.','','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spite',0,100,'Opponents last move loses 2-5 HP.','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Splash',0,0,'No effect.','Points equal 4 minus voltage of judge','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Spore',0,100,'Induces sleep.','Lowers voltage of all judges by 1','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Stealth Rock',0,0,'Stealth Rocks damaging methods are rather unique.','','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Steel Wing',70,90,'May raise users DEFENSE one stage.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Stockpile',0,0,'User stockpiles power for up to 3 turns.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Stomp',65,100,'May cause opponent to flinch.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Stone Edge',100,80,'Has high critical hit ratio.','Increases judges voltage by 2','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Strength',80,100,'No effect.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('String Shot',0,95,'Lowers opponents SPEED one stage.','Pokemon after self cannot lower any voltage in that turn','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Struggle',50,0,'','No Effect','physical',1,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Stun Spore',0,75,'Induces paralysis','Pokemon after self cannot lower any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Submission',80,80,'User takes recoil damage.','No Added Effect','physical',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Substitute',0,0,'Creates a decoy using 1/4 of the users maximum HP.','Points +3 if lowest number of points in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sucker Punch',80,100,'','Appeals first in the next turn','physical',5,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sunny Day',0,0,'Causes Sunshine for 5 rounds.','Pokemon after self cannot raise any voltage in that turn','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Super Fang',1,90,'Cuts half opponents HP.','No Added Effect','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Superpower',120,100,'Lowers users ATTACK and DEFENSE one stage.','Points +2 if last to appeal','physical',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Supersonic',0,55,'May induce CONFUSION.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Surf',95,100,'','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Swagger',0,90,'Induces CONFUSE. Raises opponents ATTACK two stages.','Pokemon after self cannot lower any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Swallow',0,0,'This move has four tiers of healing; 3 are stockpiled, 1 isnt.','','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sweet Kiss',0,75,'May induce CONFUSION.','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Sweet Scent',0,100,'Lowers opponents EVASIVENESS one stage.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Swift',60,0,'Cannot miss.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Switcheroo',0,100,'User trades items with opponent.','Receives voltage points if previous pokemon reaches max voltage','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Swords Dance',0,0,'Raises users ATTACK two stages.','Points of next appeal doubles','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Synthesis',0,0,'User restores HP.','number of points is equal to the voltage of the judge','other',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Tackle',35,95,'No effect.','No Added Effect','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Tail Glow',0,0,'Raises users SP. ATK two stages.','Points of next appeal doubles','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Tail Whip',0,100,'Lowers opponents DEFENSE one stage.','Pokemon after self cannot lower any voltage in that turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Tailwind',0,0,'','Appeals first in the next turn','other',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Take Down',90,85,'User takes recoil damage.','No Added Effect','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Taunt',0,100,'Opponent can only use attack moves.','Points equal 4 minus voltage of judge','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Teeter Dance',0,100,'Confuses all Pokémon on the field.','Order of appealing is random in the next turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Teleport',0,0,'Ends battle. Switches user in trainer battles.','Appeals first in the next turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thief',40,100,'May steal opponents item (temporarily in trainer battles).','Receives voltage points if previous pokemon reaches max voltage','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thrash',90,100,'User uses the same attack for 2-3 turns then becomes confused.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thunder',120,70,'May induce paralysis.','Points +2 if first to appeal','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thunder Fang',65,95,'','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thunder Wave',0,100,'Induces paralysis','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thunderbolt',95,100,'May induce paralysis.','Points +2 if first to appeal','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thunderpunch',75,100,'May induce paralysis.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Thundershock',40,100,'May induce paralysis.','No Added Effect','special',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Tickle',0,100,'Lowers opponents ATTACK and DEFENSE one stage.','Pokemon after self cannot lower any voltage in that turn','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Torment',0,100,'Opponent cannot use the same move in a row.','Points equal 4 minus voltage of judge','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Toxic',0,85,'Induces severe poison.','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Toxic Spikes',0,0,'Toxic Spikes is the only Entry Hazard attack that does not afflict damage on the Pokémon straight away.','','other',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Transform',0,0,'Transform can change many features of the Pokémon temporarily.','','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Tri Attack',80,100,'May induce burn, freeze or paralysis.','No Added Effect','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Trick',0,100,'User trades items with opponent.','Receives voltage points if previous pokemon reaches max voltage','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Trick Room',0,0,'','Order of appealing is random in the next turn','other',5,-7);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Triple Kick',10,90,'Attacks 1-3 times in a row.','Can be used twice consecutively','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Trump Card',1,0,'Trump Cards base power is dependant on the amount of PP that it has left.','','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Twineedle',25,100,'Attacks twice. May induce poison.','Can be used twice consecutively','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Twister',40,100,'May cause opponent to flinch. Damage is doubled if opponent is using FLY.','No Added Effect','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('U-turn',70,100,'','Points equal 4 minus voltage of judge','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Uproar',50,100,'User cannot sleep for 2-5 turns.','Lowers voltage of all judges by 1','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Vacuum Wave',40,100,'Always strikes first.','Appeals first in the next turn','special',30,1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Vicegrip',55,100,'No effect.','No Added Effect','physical',30,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Vine Whip',35,100,'No effect.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Vital Throw',70,0,'Cannot miss. Goes last.','Appeals last in the next turn','physical',10,-1);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Volt Tackle',120,100,'','Points +3 if previous pokemon reaches max voltage of a judge','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Wake-up Slap',60,100,'','Points equal 4 minus voltage of judge','physical',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Water Gun',40,100,'No effect.','No Added Effect','special',25,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Water Pulse',60,100,'May induce CONFUSION.','Points +2 if first to appeal','special',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Water Sport',0,0,'Lowers the power of FIRE moves.','Pokemon after self cannot raise any voltage in that turn','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Water Spout',150,100,'Power wise, this attack has a Base Power of 150 but that completely changes all depending on the HP.','','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Waterfall',80,100,'May cause opponent to flinch.','No Added Effect','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Weather Ball',50,100,'Depends on the weather.','Increases judges voltage by 2','special',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Whirlpool',15,70,'','First to appeal +1','special',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Whirlwind',0,100,'Ends battle. Switches the opponent Pokémon in a trainer battle.','Points +15 if all pokemon appeal to the same judge','other',20,-6);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Will-o-wisp',0,75,'Induces burn.','Points +2 if first to appeal','other',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Wing Attack',60,100,'No effect.','No Added Effect','physical',35,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Wish',0,0,'Recovers HP. Delays 1 turn.','Points equal to the voltage of judge','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Withdraw',0,0,'Raises users DEFENSE one stage.','Pokemon after self cannot raise any voltage in that turn','other',40,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Wood Hammer',120,100,'User takes recoil damage.','Points +2 if last to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Worry Seed',0,100,'','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Wrap',15,85,'Traps opponent.','First to appeal +1','physical',20,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Wring Out',1,100,'This attack\s Base Power is anything from 1 up to 110 making it a fairly powerful attack to be used.','','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('X-scissor',80,100,'No effect.','Points +2 if first to appeal','physical',15,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Yawn',0,0,'User and opponent sleep the next turn.','Pokemon after self cannot lower any voltage in that turn','other',10,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Zap Cannon',120,50,'May induce paralysis.','Increases judges voltage by 2','special',5,0);
+INSERT INTO move (moveName,basePower,accuracy,description,effect,category,powerPoints,speedPrio) VALUES ('Zen Headbutt',80,90,'May cause opponent to flinch.','Points +2 if last to appeal','physical',15,0);
 
 INSERT INTO location (locationName) VALUES('Route 201');
 INSERT INTO location (locationName) VALUES('Route 202');
@@ -2528,7 +2525,473 @@ INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (491,'Dark')
 INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (492,'Grass')
 INSERT INTO pokemonHasTypes (dexNum,typeName) VALUES (493,'Normal')
 
-
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Absorb','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Acid','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Acid Armor','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Acupressure','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aerial Ace','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aeroblast','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Agility','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Air Cutter','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Air Slash','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Amnesia','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ancientpower','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Jet','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Ring','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aqua Tail','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Arm Thrust','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aromatherapy','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Assist','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Assurance','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Astonish','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Attack Order','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Attract','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aura Sphere','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Aurora Beam','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Avalanche','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Barrage','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Barrier','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Baton Pass','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Beat Up','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Belly Drum','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bide','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bind','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bite','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Blast Burn','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Blaze Kick','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Blizzard','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Block','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Body Slam','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bone Club','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bone Rush','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bonemerang','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bounce','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Brave Bird','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Brick Break','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Brine','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bubble','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bubblebeam','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bug Bite','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bug Buzz','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bulk Up','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bullet Punch','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Bullet Seed','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Calm Mind','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Camouflage','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Captivate','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Charge','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Charge Beam','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Charm','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Chatter','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Clamp','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Close Combat','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Comet Punch','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Confuse Ray','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Confusion','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Constrict','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Conversion','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Conversion 2','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Copycat','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cosmic Power','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cotton Spore','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Counter','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Covet','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crabhammer','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cross Chop','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cross Poison','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crunch','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crush Claw','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Crush Grip','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Curse','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Cut','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dark Pulse','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dark Void','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Defense Curl','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Defend Order','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Defog','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Destiny Bond','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Detect','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dig','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Disable','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Discharge','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dive','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dizzy Punch','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Doom Desire','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Hit','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Kick','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double Team','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Double-edge','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Doubleslap','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Draco Meteor','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Claw','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Dance','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Pulse','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Rage','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragon Rush','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dragonbreath','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Drain Punch','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dream Eater','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Drill Peck','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Dynamicpunch','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Earth Power','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Earthquake','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Egg Bomb','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Embargo','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ember','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Encore','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Endeavor','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Endure','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Energy Ball','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Eruption','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Explosion','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Extrasensory','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Extremespeed','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Facade','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Faint Attack','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fake Out','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fake Tears','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('False Swipe','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Featherdance','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Feint','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Blast','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Fang','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Punch','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fire Spin','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fissure','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flail','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flame Wheel','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flamethrower','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flare Blitz','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flash','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flash Cannon','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Flatter','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fling','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fly','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Blast','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Energy','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Focus Punch','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Follow Me','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Force Palm','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Foresight','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Frenzy Plant','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Frustration','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Attack','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Cutter','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Fury Swipes','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Future Sight','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gastro Acid','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Giga Drain','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Giga Impact','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Glare','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Grass Knot','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Grasswhistle','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gravity','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Growl','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Growth','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Grudge','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Guard Swap','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Guillotine','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gunk Shot','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gust','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Gyro Ball','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hail','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hammer Arm','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Harden','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Haze','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Head Smash','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Headbutt','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Bell','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Block','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heal Order','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Healing Wish','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heart Swap','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Heat Wave','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Helping Hand','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hi Jump Kick','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hidden Power','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Horn Attack','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Horn Drill','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Howl','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hydro Cannon','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hydro Pump','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Beam','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Fang','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hyper Voice','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Hypnosis','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Ball','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Beam','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Fang','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Punch','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ice Shard','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Icicle Spear','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Icy Wind','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Imprison','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ingrain','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Defense','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Head','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Iron Tail','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Judgment','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Jump Kick','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Karate Chop','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Kinesis','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Knock Off','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Last Resort','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lava Plume','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leaf Blade','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leaf Storm','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leech Life','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leech Seed','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Leer','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lick','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Light Screen','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lock-on','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lovely Kiss','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Low Kick','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lucky Chant','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Lunar Dance','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Luster Purge','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mach Punch','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magic Coat','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magical Leaf','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magma Storm','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnet Bomb','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnet Rise','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Magnitude','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Me First','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mean Look','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Meditate','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Drain','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Kick','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mega Punch','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Megahorn','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Memento','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Burst','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Claw','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metal Sound','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Meteor Mash','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Metronome','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Milk Drink','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mimic','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mind Reader','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Minimize','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Miracle Eye','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Coat','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Move','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mirror Shot','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mist','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mist Ball','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Moonlight','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Morning Sun','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Bomb','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Shot','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud Sport','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Mud-slap','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Muddy Water','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Nasty Plot','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Natural Gift','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Nature Power','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Needle Arm','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Night Shade','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Night Slash','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Nightmare','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Octazooka','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Odor Sleuth','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Ominous Wind','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Outrage','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Overheat','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pain Split','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pay Day','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Payback','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Peck','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Perish Song','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Petal Dance','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pin Missile','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pluck','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Fang','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Gas','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Jab','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Sting','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poison Tail','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Poisonpowder','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pound','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Powder Snow','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Gem','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Swap','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Trick','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Power Whip','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Present','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Protect','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psybeam','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psych Up','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psychic','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Boost','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Cut','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psycho Shift','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Psywave','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Punishment','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Pursuit','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Quick Attack','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rage','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rain Dance','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rapid Spin','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Razor Leaf','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Razor Wind','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Recover','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Recycle','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Reflect','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Refresh','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rest','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Return','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Revenge','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Reversal','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Roar','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Roar Of Time','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Blast','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Climb','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Polish','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Slide','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Smash','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Throw','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Tomb','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rock Wrecker','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Role Play','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rolling Kick','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Rollout','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Roost','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sacred Fire','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Safeguard','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sand Tomb','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sand-attack','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sandstorm','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Scary Face','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Scratch','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Screech','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Secret Power','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Seed Bomb','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Seed Flare','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Seismic Toss','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Selfdestruct','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Ball','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Claw','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Force','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Punch','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shadow Sneak','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sharpen','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sheer Cold','Ice')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Shock Wave','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Signal Beam','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Silver Wind','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sing','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sketch','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Skill Swap','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Skull Bash','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sky Attack','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sky Uppercut','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Slack Off','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Slam','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Slash','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sleep Powder','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sleep Talk','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sludge','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sludge Bomb','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Smellingsalt','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Smog','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Smokescreen','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Snatch','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Snore','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Softboiled','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Solarbeam','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sonicboom','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spacial Rend','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spark','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spider Web','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spike Cannon','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spikes','Ground')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spit Up','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spite','Ghost')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Splash','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Spore','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stealth Rock','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Steel Wing','Steel')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stockpile','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stomp','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stone Edge','Rock')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Strength','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('String Shot','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Struggle','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Stun Spore','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Submission','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Substitute','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sucker Punch','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sunny Day','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Super Fang','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Superpower','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Supersonic','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Surf','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swagger','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swallow','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sweet Kiss','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Sweet Scent','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swift','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Switcheroo','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Swords Dance','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Synthesis','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tackle','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tail Glow','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tail Whip','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tailwind','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Take Down','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Taunt','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Teeter Dance','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Teleport','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thief','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thrash','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder Fang','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunder Wave','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunderbolt','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thunderpunch','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Thundershock','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tickle','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Torment','Dark')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Toxic','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Toxic Spikes','Poison')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Transform','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Tri Attack','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Trick','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Trick Room','Psychic')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Triple Kick','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Trump Card','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Twineedle','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Twister','Dragon')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('U-turn','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Uproar','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vacuum Wave','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vicegrip','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vine Whip','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Vital Throw','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Volt Tackle','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wake-up Slap','Fighting')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Gun','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Pulse','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Sport','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Water Spout','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Waterfall','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Weather Ball','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Whirlpool','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Whirlwind','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Will-o-wisp','Fire')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wing Attack','Flying')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wish','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Withdraw','Water')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wood Hammer','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Worry Seed','Grass')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wrap','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Wring Out','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('X-scissor','Bug')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Yawn','Normal')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Zap Cannon','Electric')
+INSERT INTO moveHasType (moveName,typeName) VALUES ('Zen Headbutt','Psychic')
 
 INSERT INTO isEffectiveAgainst (atkTypeName,defTypeName) VALUES ('Fire','Grass');
 INSERT INTO isEffectiveAgainst (atkTypeName,defTypeName) VALUES ('Fire','Ice');
