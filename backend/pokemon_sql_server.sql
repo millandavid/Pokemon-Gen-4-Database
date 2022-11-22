@@ -10,7 +10,6 @@
 --should change effortValues to individual ones like baseStats?
 --got rid of gender, supercontest, nature, effortValues, characteristics. evolveMethod on hold for now since very complicated
 --changed 'effectiveness' table to isEffectiveAgainst
---ON DELETE CASCADES
 --add not nulls?
 --remove PokemonType from ER? (since we have pokemonHasType table/relation)
 --trainer time change to date instead of int?

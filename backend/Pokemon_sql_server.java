@@ -14,11 +14,7 @@ import java.io.FileReader;
 import java.io.BufferedReader;
 import java.util.Scanner;
 
-public class SQLServerDemo {
-
-    // Connect to your database.
-    // Replace server name, username, and password with your credentials
-
+public class Pokemon_sql_server {
   private static String connectionUrl = "";
   private static ResultSet resultSet = null;
 
@@ -27,7 +23,6 @@ public class SQLServerDemo {
     initDB();
     printHelp();
     runConsole();
-    // numberOfType();
   }
 
   public static void initDB(){
@@ -66,6 +61,8 @@ public class SQLServerDemo {
 
 		Scanner console = new Scanner(System.in);
 		System.out.println("Welcome to the Pokemon 4th Generation Database! \nType h for help. ");
+    printZard();
+    System.out.println("Type h for help.");
 		System.out.print("db > ");
 		String line = console.nextLine();
 		String[] parts;
@@ -193,14 +190,27 @@ public class SQLServerDemo {
       else if (parts[0].equals("notFound")) {
         notFound();
 			}
-      
+      else if (parts[0].equals("strongM")) {
+        try {
+          if (parts.length >= 2)
+          effectiveMove(arg);
+          else
+            System.out.println("Require an argument for this command");  
+        } 
+        catch (Exception e) {
+          System.out.println("Incorrect type name");
+        }
+			}
+      else if (parts[0].equals("p")) {
+        printZard();
+			}
 			else
 				System.out.println("Read the help with h, or find help somewhere else.");
 
 			System.out.print("db > ");
 			line = console.nextLine();
 		}
-
+    
 		console.close();
 	}
 
@@ -239,12 +249,13 @@ public class SQLServerDemo {
     System.out.println("sum - Pokemon with the highest base stats total");
 
     System.out.println("\n==================== COMMANDS FOR COOL QUERIES ==================================\n");
-    System.out.println("listType - Number of Pokemon for each type");
-    System.out.println("foundAt  - Pokemon that can be found at a location");
-    System.out.println("notFound - Pokemon that cannot be caught normally");
+    System.out.println("listType       - Number of Pokemon for each type");
+    System.out.println("foundAt        - Pokemon that can be found at a location");
+    System.out.println("notFound       - Pokemon that cannot be caught normally");
+    System.out.println("strongM <type> - Moves the trainer's pokemon can learn that are effective against a specified type");
     System.out.println("\n=================================================================================\n");
 		System.out.println("");
-
+    System.out.println("p - Print Charizard again");
 		System.out.println("q - Exit the program");
 
 		System.out.println("---- end help ----- ");
@@ -717,5 +728,76 @@ public class SQLServerDemo {
     catch (SQLException e) {
         e.printStackTrace();
     }
+  }
+
+  public static void effectiveMove(String type){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT pokemon.name, move.moveName FROM trainerOwns" 
+      +" JOIN pokemon ON trainerOwns.dexNum = pokemon.dexNum JOIN pokemonLearnsMoves ON pokemon.dexNum = pokemonLearnsMoves.dexNum" 
+      +" JOIN move ON pokemonLearnsMoves.moveName = move.moveName"
+      +" JOIN moveHasType ON move.moveName = moveHasType.moveName" 
+      +" JOIN isEffectiveAgainst ON moveHasType.typeName = isEffectiveAgainst.atkTypeName WHERE defTypeName LIKE ?";
+
+      PreparedStatement statement = connection.prepareStatement(selectSql);
+      statement.setString(1, "%"+type+"%");
+      resultSet = statement.executeQuery();
+
+      // Print results from select statement
+      System.out.format("%30s %15s", "Pokemon", "Move");
+      System.out.println();
+      while (resultSet.next()) {
+        System.out.format("%30s %15s", "Pokemon: " +resultSet.getString("name"), resultSet.getString("moveName"));
+        System.out.println();
+        // System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name") +" Move: "+resultSet.getString("moveName"));
+      }
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+
+  public static void printZard(){
+    System.out.print("                 .\"-,.__\n");
+    System.out.print("                 `.     `.  ,\n");
+    System.out.print("              .--'  .._,'\"-' `.\n");
+    System.out.print("             .    .' COMP    `'\n");
+    System.out.print("             `.   /  3380    ,'\n");
+    System.out.print("               `  '--.   ,-\"'\n");
+    System.out.print("                `\"`   |  \\\n");
+    System.out.print("                   -. \\, |\n");
+    System.out.print("                    `--Y.'      ___.\n");
+    System.out.print("                         \\     L._, \\\n");
+    System.out.print("               _.,        `.   <  <\\                _\n");
+    System.out.print("             ,' '           `, `.   | \\            ( `\n");
+    System.out.print("          ../, `.            `  |    .\\`.           \\ \\_\n");
+    System.out.print("         ,' ,..  .           _.,'    ||\\l            )  '\".\n");
+    System.out.print("        , ,'   \\           ,'.-.`-._,'  |           .  _._`.\n");
+    System.out.print("      ,' /      \\ \\        `' ' `--/   | \\          / /   ..\\\n");
+    System.out.print("    .'  /        \\ .         |\\__ - _ ,'` `        / /     `.`.\n");
+    System.out.print("    |  '          ..         `-...-\"  |  `-'      / /        . `.\n");
+    System.out.print("    | /           |L__           |    |          / /          `. `.\n");
+    System.out.print("   , /            .   .          |    |         / /             ` `\n");
+    System.out.print("  / /          ,. ,`._ `-_       |    |  _   ,-' /               ` \\\n");
+    System.out.print(" / .           \\\"`_/. `-_ \\_,.  ,'    +-' `-'  _,        ..,-.    \\`.\n");
+    System.out.print(".  '         .-f    ,'   `    '.       \\__.---'     _   .'   '     \\ \\\n");
+    System.out.print("' /          `.'    l     .' /          \\..      ,_|/   `.  ,'`     L`\n");
+    System.out.print("|'      _.-\"\"` `.    \\ _,'  `            \\ `.___`.'\"`-.  , |   |    | \\\n");
+    System.out.print("||    ,'      `. `.   '       _,...._        `  |    `/ '  |   '     .|\n");
+    System.out.print("||  ,'          `. ;.,.---' ,'       `.   `.. `-'  .-' /_ .'    ;_   ||\n");
+    System.out.print("|| '              V      / /           `   | `   ,'   ,' '.    !  `. ||\n");
+    System.out.print("||/            _,-------7 '              . |  `-'    l         /    `||\n");
+    System.out.print(". |          ,' .-   ,' ||               | .-.        `.      .'     ||\n");
+    System.out.print(" `'        ,'    `\".'    |               |    `.        '. -.'       `'\n");
+    System.out.print("          /      ,'      |               |,'    \\-.._,.'/'\n");
+    System.out.print("          .     /        .               .       \\    .''\n");
+    System.out.print("        .`.    |         `.             /         :_,'.'\n");
+    System.out.print("          \\ `...\\   _     ,'-.        .'         /_.-'\n");
+    System.out.print("           `-.__ `,  `'   .  _.>----''.  _  __  /\n");
+    System.out.print("                .'        /\"'          |  \"'   '_\n");
+    System.out.print("               /_|.-'\\ ,\".             '.'`__'-( \\\n");
+    System.out.print("                 / ,\"'\"\\,'               `/  `-.|\" mh\n");
   }
 }
