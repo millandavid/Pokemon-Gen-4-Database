@@ -15,9 +15,6 @@
 --remove PokemonType from ER? (since we have pokemonHasType table/relation)
 --trainer time change to date instead of int?
 
---SELECT pokemon.dexNum, pokemon.name FROM pokemon INNER JOIN pokemonAbilities ON(pokemon.dexNum = pokemonAbilities.dexNum) 
---WHERE CONVERT(NVARCHAR(MAX), ability) = 'flame body';
-
 use cs3380;
 
 -- clean up
@@ -72,7 +69,7 @@ create table move ( --done
 );
 
 create table location ( --done
-    locationName varchar(100) primary key
+  locationName varchar(100) primary key
 );
 
 create table trainer ( --done

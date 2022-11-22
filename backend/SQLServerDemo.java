@@ -25,6 +25,7 @@ public class SQLServerDemo {
 
   public static void main(String[] args) {
     initDB();
+    printHelp();
     runConsole();
     // numberOfType();
   }
@@ -80,14 +81,29 @@ public class SQLServerDemo {
 			else if (parts[0].equals("allP")) {
 				listAllPokemon();
 			}
+      else if (parts[0].equals("allK")) {
+				listAllKanto();
+			}
+      else if (parts[0].equals("allJ")) {
+				listAllJohto();
+			}
+      else if (parts[0].equals("allH")) {
+				listAllHoenn();
+			}
+      else if (parts[0].equals("allS")) {
+				listAllSinnoh();
+			}
       else if (parts[0].equals("allA")) {
 				listAllAbilities();
 			}
       else if (parts[0].equals("allL")) {
 				listAllLocations();
 			}
-      else if (parts[0].equals("allEgg")) {
+      else if (parts[0].equals("allE")) {
 				listAllEgg();
+			}
+      else if (parts[0].equals("allT")) {
+				listAllTrainers();
 			}
       else if (parts[0].equals("pAtk")) {
 				pAtk();
@@ -128,6 +144,38 @@ public class SQLServerDemo {
           System.out.println("Incorrect ability name");
         }
 			}
+      else if (parts[0].equals("sMove")) {
+        try {
+          if (parts.length >= 2)
+            searchMove(arg);
+          else
+            System.out.println("Require an argument for this command");  
+        } 
+        catch (Exception e) {
+          System.out.println("Incorrect Pokemon name");
+        }
+			}
+      else if (parts[0].equals("hp")) {
+        highestHP();
+			}
+      else if (parts[0].equals("atk")) {
+        highestAtk();
+			}
+      else if (parts[0].equals("def")) {
+        highestDef();
+			}
+      else if (parts[0].equals("spa")) {
+        highestSpa();
+			}
+      else if (parts[0].equals("spd")) {
+        highestSpd();
+			}
+      else if (parts[0].equals("spe")) {
+        highestSpe();
+			}
+      else if (parts[0].equals("sum")) {
+        highestSum();
+			}
       else if (parts[0].equals("listType")) {
         numberOfType();
 			}
@@ -157,28 +205,44 @@ public class SQLServerDemo {
 	}
 
 	private static void printHelp() {
+    System.out.println("=================================================================================");
 		System.out.println("Library database");
 		System.out.println("Commands:");
 		System.out.println("h - Get help");
-    System.out.println("==================== COMMANDS FOR LISTING ====================");
+    System.out.println("\n==================== COMMANDS FOR LISTING =======================================\n");
     System.out.println("allP - List of all Pokemon");
+    System.out.println("allK - List of all Pokemon that originate from Kanto");
+    System.out.println("allJ - List of all Pokemon that originate from Johto");
+    System.out.println("allH - List of all Pokemon that originate from Hoenn");
+    System.out.println("allS - List of all Pokemon that originate from Sinnoh");
     System.out.println("allA - List of all Pokemon and their abilities");
     System.out.println("allL - List of all locations");
-    System.out.println("allEgg - List of all Egg groups");
+    System.out.println("allE - List of all Egg groups");
+    System.out.println("allT - List of all of the Trainer's Pokemon");
 
     System.out.println("pAtk - List of all Physical Attacks");
     System.out.println("sAtk - List of all Special Attacks");
 
-    System.out.println("==================== COMMANDS FOR SEARCHING A SPECIFIC THING ====================");
-		System.out.println("sID <dexNum> - Search for a name");
-    System.out.println("sName <pkmn name> - Search for a name");
-    System.out.println("sAb <pkmn name> - List Pokemon with this ability");
+    System.out.println("\n==================== COMMANDS FOR SEARCHING A SPECIFIC THING ====================\n");
+		System.out.println("sID    <dexNum>    - Search for a name");
+    System.out.println("sName  <pkmn name> - Search for a name");
+    System.out.println("sAb    <pkmn name> - List Pokemon with this ability");
+    System.out.println("sMoves <pkmn name> - List the moves a Pokemon learns through level up");
 
-    System.out.println("==================== COMMANDS FOR COOL QUERIES ====================");
+    System.out.println("\n==================== COMMANDS FOR POKEMON STATS =================================\n");
+    System.out.println("hp  - Pokemon with the highest base Health Points Stat");
+    System.out.println("atk - Pokemon with the highest base Attack Stat");
+    System.out.println("def - Pokemon with the highest base Defence Stat");
+    System.out.println("spa - Pokemon with the highest base Special Attack Stat");
+    System.out.println("spd - Pokemon with the highest base Special Defence Stat");
+    System.out.println("spe - Pokemon with the highest base Special Speed Stat");
+    System.out.println("sum - Pokemon with the highest base stats total");
 
+    System.out.println("\n==================== COMMANDS FOR COOL QUERIES ==================================\n");
     System.out.println("listType - Number of Pokemon for each type");
-    System.out.println("foundAt - Pokemon that can be found at a location");
+    System.out.println("foundAt  - Pokemon that can be found at a location");
     System.out.println("notFound - Pokemon that cannot be caught normally");
+    System.out.println("\n=================================================================================\n");
 		System.out.println("");
 
 		System.out.println("q - Exit the program");
@@ -197,7 +261,79 @@ public class SQLServerDemo {
 
       // Print results from select statement
       while (resultSet.next()) {
-          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ " : " +resultSet.getString("name"));
+          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
+      }
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void listAllKanto(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT dexNum, name FROM pokemon WHERE dexNum < 152;";
+      resultSet = statement.executeQuery(selectSql);
+
+      // Print results from select statement
+      while (resultSet.next()) {
+          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
+      }
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void listAllJohto(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT dexNum, name FROM pokemon WHERE dexNum > 151 AND dexNum < 252;";
+      resultSet = statement.executeQuery(selectSql);
+
+      // Print results from select statement
+      while (resultSet.next()) {
+          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
+      }
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void listAllHoenn(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT dexNum, name FROM pokemon WHERE dexNum > 251 AND dexNum < 387;";
+      resultSet = statement.executeQuery(selectSql);
+
+      // Print results from select statement
+      while (resultSet.next()) {
+          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
+      }
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void listAllSinnoh(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT dexNum, name FROM pokemon WHERE dexNum > 386;";
+      resultSet = statement.executeQuery(selectSql);
+
+      // Print results from select statement
+      while (resultSet.next()) {
+          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
       }
     }
     catch (SQLException e) {
@@ -277,6 +413,24 @@ public class SQLServerDemo {
     }
   }
 
+  public static void listAllTrainers(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT trainer.trainerID, trainer.trainerName, trainerOwns.dexNum, pokemon.name FROM trainer JOIN trainerOwns ON trainer.trainerID = trainerOwns.trainerID JOIN pokemon ON trainerOwns.dexNum = pokemon.dexNum";
+      resultSet = statement.executeQuery(selectSql);
+
+      // Print results from select statement
+      while (resultSet.next()) {
+        System.out.println("Trainer ID: "+resultSet.getString("trainerID") +" Trainer Name: " + resultSet.getString("trainerName") + " Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
+      }
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
   public static void pAtk(){
     try (Connection connection = DriverManager.getConnection(connectionUrl);
       Statement statement = connection.createStatement();) {
@@ -319,8 +473,7 @@ public class SQLServerDemo {
   }
 
   public static void searchPkmnByID(String dex){
-    try (Connection connection = DriverManager.getConnection(connectionUrl);
-      ) {
+    try (Connection connection = DriverManager.getConnection(connectionUrl);) {
 
       // Create and execute a SELECT SQL statement.
       String selectSql = "SELECT dexNum, name FROM pokemon WHERE dexNum = ?;";
@@ -330,7 +483,7 @@ public class SQLServerDemo {
 
       // Print results from select statement
       while (resultSet.next()) {
-          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ " : " +resultSet.getString("name"));
+          System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
       }
     }
     catch (SQLException e) {
@@ -370,9 +523,141 @@ public class SQLServerDemo {
 
       // Print results from select statement
       while (resultSet.next()) {
-        System.out.println("Pokemon "+resultSet.getInt("dexNum")+ " : " +resultSet.getString("name"));
+        System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
       }
       
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void searchMove(String name){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);) {
+        
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT pokemonLearnsMoves.moveName FROM pokemonLearnsMoves INNER JOIN pokemon ON (pokemonLearnsMoves.dexNum = pokemon.dexNum) WHERE CONVERT(NVARCHAR(MAX), pokemon.name) LIKE ?";
+      PreparedStatement statement = connection.prepareStatement(selectSql);
+      statement.setString(1, "%"+name+"%");
+      resultSet = statement.executeQuery();
+
+      // Print results from select statement
+      System.out.println("Moves that "+ name +" Learns through level up");
+      while (resultSet.next()) {
+        System.out.println("Move: "+ resultSet.getString("moveName"));
+      }
+      
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void highestHP(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT CONVERT(NVARCHAR(MAX), name) as name, MAX(hp) as maxVal FROM pokemon GROUP BY CONVERT(NVARCHAR(MAX), name) ORDER BY maxVal DESC;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest HP with " + resultSet.getInt("maxVal"));
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void highestAtk(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT CONVERT(NVARCHAR(MAX), name) as name, MAX(atk) as maxVal FROM pokemon GROUP BY CONVERT(NVARCHAR(MAX), name) ORDER BY maxVal DESC;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest Atk with " + resultSet.getInt("maxVal"));
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void highestDef(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT CONVERT(NVARCHAR(MAX), name) as name, MAX(def) as maxVal FROM pokemon GROUP BY CONVERT(NVARCHAR(MAX), name) ORDER BY maxVal DESC;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest Def with " + resultSet.getInt("maxVal"));
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void highestSpa(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT CONVERT(NVARCHAR(MAX), name) as name, MAX(spa) as maxVal FROM pokemon GROUP BY CONVERT(NVARCHAR(MAX), name) ORDER BY maxVal DESC;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest SpA with " + resultSet.getInt("maxVal"));
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void highestSpd(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT CONVERT(NVARCHAR(MAX), name) as name, MAX(spd) as maxVal FROM pokemon GROUP BY CONVERT(NVARCHAR(MAX), name) ORDER BY maxVal DESC;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest SpD with " + resultSet.getInt("maxVal"));
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+
+  public static void highestSpe(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT CONVERT(NVARCHAR(MAX), name) as name, MAX(speed) as maxVal FROM pokemon GROUP BY CONVERT(NVARCHAR(MAX), name) ORDER BY maxVal DESC;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest Speed with " + resultSet.getInt("maxVal"));
+    }
+    catch (SQLException e) {
+        e.printStackTrace();
+    }
+  }
+  public static void highestSum(){
+    try (Connection connection = DriverManager.getConnection(connectionUrl);
+      Statement statement = connection.createStatement();) {
+
+      // Create and execute a SELECT SQL statement.
+      String selectSql = "SELECT dexNum, name, hp + atk + def + spa + spd + speed as sumStats FROM pokemon ORDER BY sumStats desc;";
+      resultSet = statement.executeQuery(selectSql);
+
+      resultSet.next();
+        System.out.println(resultSet.getString("name") + " has the highest total base stats with " + resultSet.getInt("sumStats"));
     }
     catch (SQLException e) {
         e.printStackTrace();
@@ -408,7 +693,7 @@ public class SQLServerDemo {
 
       // Print results from select statement
       while (resultSet.next()) {
-        System.out.println("Pokemon "+resultSet.getInt("dexNum")+ " : " +resultSet.getString("name"));
+        System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
       }
     }
     catch (SQLException e) {
@@ -426,7 +711,7 @@ public class SQLServerDemo {
 
       // Print results from select statement
       while (resultSet.next()) {
-        System.out.println("Pokemon "+resultSet.getInt("dexNum")+ " : " +resultSet.getString("name"));
+        System.out.println("Pokemon "+resultSet.getInt("dexNum")+ ": " +resultSet.getString("name"));
       }
     }
     catch (SQLException e) {
