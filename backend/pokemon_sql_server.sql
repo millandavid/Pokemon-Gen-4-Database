@@ -15,10 +15,14 @@
 --remove PokemonType from ER? (since we have pokemonHasType table/relation)
 --trainer time change to date instead of int?
 
+SELECT pokemon.dexNum, pokemon.name FROM pokemon INNER JOIN pokemonAbilities ON(pokemon.dexNum = pokemonAbilities.dexNum) 
+WHERE CONVERT(NVARCHAR(MAX), ability) = 'flame body';
+
 use cs3380;
 
 -- clean up
 drop table if exists pokemonEggGroups;
+drop table if exists pokemonLearnsMoveBy;
 drop table if exists pokemonLearnsMoves;
 drop table if exists pokemonAbilities;
 drop table if exists trainerOwns;
@@ -34,37 +38,40 @@ drop table if exists pokemon;
 
 
 create table pokemon ( --done
-    dexNum integer primary key,
-    name text not null,
-    hp integer not null,
-    atk integer not null,
-    def integer not null,
-    spa integer not null,
-    spd integer not null,
-    speed integer not null,
-    height text not null,
-    weight text not null,
-    captureRate integer not null,
-    classification text,
-    expGrowth integer not null,
-    baseHappiness integer not null,
-    colour text not null,
-    eggSteps integer
+  dexNum integer primary key,
+  name text not null,
+  hp integer not null,
+  atk integer not null,
+  def integer not null,
+  spa integer not null,
+  spd integer not null,
+  speed integer not null,
+  height text not null,
+  weight text not null,
+  captureRate integer not null,
+  classification text,
+  expGrowth integer not null,
+  baseHappiness integer not null,
+  colour text not null,
+  eggSteps integer
+  --evolveMethod text
 );
 
 create table type ( --done
-    typeName varchar(100) primary key
+  typeName varchar(100) primary key
 );
 
 create table move ( --done
-    moveName varchar(100) primary key,
-    basePower integer,
-    accuracy integer,
+  moveName varchar(100) primary key,
+  basePower integer,
+  accuracy integer,
 	description text,
-    effect text,
-    category text,
-    powerPoints integer,
-    speedPrio integer
+  effect text,
+  --battleType text,
+  category text,
+  powerPoints integer,
+  speedPrio integer
+  --moveLevel integer
 );
 
 create table location ( --done
@@ -72,64 +79,71 @@ create table location ( --done
 );
 
 create table trainer ( --done
-    trainerID integer primary key,
-    secretID integer,
-    trainerName text,
-    money integer not null,
-    score integer not null,
-    pokedexCount integer not null,
-    time text not null,
-    startTime text not null
+  trainerID integer primary key,
+  secretID integer,
+  trainerName text,
+  money integer not null,
+  score integer not null,
+  pokedexCount integer not null,
+  time text not null,
+  startTime text not null
 );
 
 create table pokemonEggGroups ( --done
-    dexNum integer references pokemon(dexNum),
-    eggGroup varchar(100) not null,
-    primary key (dexNum, eggGroup)
+  dexNum integer references pokemon(dexNum),
+  eggGroup varchar(100) not null,
+  primary key (dexNum, eggGroup)
 );
 
 create table pokemonAbilities ( --done
-    dexNum integer references pokemon(dexNum),
-    ability varchar(100) not null,
-    primary key (dexNum, ability)
+  dexNum integer references pokemon(dexNum),
+  ability varchar(100) not null,
+  primary key (dexNum, ability)
 );
+
+--create table pokemonLearnsMoveBy ( --MIGHT DELETE
+  --dexNum integer references pokemon(dexNum),
+  --moveName varchar(100) references move(moveName),
+  --learnsBy varchar(100),
+  --primary key (dexNum, moveName, learnsBy)
+--);
 
 --relatations
 
 create table pokemonHasTypes ( --done
-    dexNum integer references pokemon(dexNum),
-    typeName varchar(100) references type(typeName),
-    primary key (dexNum, typeName)
+  dexNum integer references pokemon(dexNum),
+  typeName varchar(100) references type(typeName),
+  primary key (dexNum, typeName)
 );
 
 create table pokemonLearnsMoves (
-    dexNum integer references pokemon(dexNum),
-    moveName varchar(100) references move(moveName),
-    primary key (dexNum, moveName)
+  dexNum integer references pokemon(dexNum),
+  moveName varchar(100) references move(moveName),
+  primary key (dexNum, moveName)
 );
 
 create table moveHasType( --done
-    moveName varchar(100) references move(moveName),
-    typeName varchar(100) references type(typeName),
-    primary key (moveName, typeName)
+  moveName varchar(100) references move(moveName),
+  typeName varchar(100) references type(typeName),
+  primary key (moveName, typeName)
 );
 
 create table isEffectiveAgainst( --done
-    atkTypeName varchar(100) references type(typeName), --attacking type
-    defTypeName varchar(100) references type(typeName), --defending type
-    primary key (atkTypeName, defTypeName)
+  atkTypeName varchar(100) references type(typeName), --attacking type
+  defTypeName varchar(100) references type(typeName), --defending type
+  primary key (atkTypeName, defTypeName)
 );
 
 create table locatedAt( --done
-    dexNum integer references pokemon(dexNum),
-    locationName varchar(100) references location(locationName),
-    primary key (dexNum, locationName)
+  dexNum integer references pokemon(dexNum),
+  locationName varchar(100) references location(locationName),
+  primary key (dexNum, locationName)
 );
 
 create table trainerOwns( --done
-    dexNum integer references pokemon(dexNum),
-    trainerID integer references trainer(trainerID),
-    primary key (dexNum, trainerID)
+  dexNum integer references pokemon(dexNum),
+  trainerID integer references trainer(trainerID),
+  primary key (dexNum, trainerID)
 );
 
 
